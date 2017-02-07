@@ -2,6 +2,7 @@ var classArduboy2 =
 [
     [ "begin", "classArduboy2.html#a8a917f8ad5bc1a81c85e12ce2ad4a317", null ],
     [ "bootLogo", "classArduboy2.html#a90e352941396d013789dac951d1230fe", null ],
+    [ "bootLogoExtra", "classArduboy2.html#a9687ed92d84cb1055c83cd479aa7a4e5", null ],
     [ "clear", "classArduboy2.html#aca22895b21f3182db5a01bc9f6b246a1", null ],
     [ "collide", "classArduboy2.html#a2bda6693a08b299e275a97dd30254560", null ],
     [ "collide", "classArduboy2.html#af3717fd4ad38567c4010c9b08ad36baf", null ],
@@ -35,9 +36,12 @@ var classArduboy2 =
     [ "justPressed", "classArduboy2.html#acab90d5bfbcb9a65841cd9f812dbbf97", null ],
     [ "justReleased", "classArduboy2.html#a605ac84d7efd4a8f52342c97a68f951f", null ],
     [ "nextFrame", "classArduboy2.html#a3ddef9eba2ac41983d7d1f05367dff3d", null ],
+    [ "nextFrameDEV", "classArduboy2.html#a45c6a2b014749458b68f4866b274e033", null ],
     [ "notPressed", "classArduboy2.html#a8f2bb579fb1c4ad8a24484916f5e234d", null ],
     [ "pollButtons", "classArduboy2.html#a2f275c7d4a3438f7be543a02eb9a7d00", null ],
     [ "pressed", "classArduboy2.html#a1a294744f7886588b6864f1df75a91ba", null ],
+    [ "readUnitID", "classArduboy2.html#a29a141cc127fb9abc8de096ae3a93aa0", null ],
+    [ "readUnitName", "classArduboy2.html#a4c1882ecdacf268c4348ff1e12cf346e", null ],
     [ "setCursor", "classArduboy2.html#a5ab1d707ecde0811f77e402c61de25a3", null ],
     [ "setFrameRate", "classArduboy2.html#a6067bc5cf843a60f3c30f9ab6362018d", null ],
     [ "setTextBackground", "classArduboy2.html#aceb292fd4c3dd298e523421bb0f51236", null ],
@@ -46,5 +50,8 @@ var classArduboy2 =
     [ "setTextWrap", "classArduboy2.html#a860b6c048eadac45ae8e4901ad254b6b", null ],
     [ "systemButtons", "classArduboy2.html#ad6dc5d0b396938daee143010bba64182", null ],
     [ "write", "classArduboy2.html#adc1b073783b71ae14843a4a0e806289a", null ],
-    [ "audio", "classArduboy2.html#a4b51510fd8ea2a35e0e4098af209ca88", null ]
+    [ "writeUnitID", "classArduboy2.html#a1947d7386a7800643d73743f8ce00f41", null ],
+    [ "writeUnitName", "classArduboy2.html#a8d63d2fc0f45ab6af82616bbe6422785", null ],
+    [ "audio", "classArduboy2.html#a4b51510fd8ea2a35e0e4098af209ca88", null ],
+    [ "frameCount", "classArduboy2.html#a281ecc7c3df686e3e87584794442cda9", null ]
 ];

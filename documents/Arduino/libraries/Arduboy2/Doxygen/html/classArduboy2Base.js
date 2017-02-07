@@ -32,10 +32,16 @@ var classArduboy2Base =
     [ "justPressed", "classArduboy2Base.html#acab90d5bfbcb9a65841cd9f812dbbf97", null ],
     [ "justReleased", "classArduboy2Base.html#a605ac84d7efd4a8f52342c97a68f951f", null ],
     [ "nextFrame", "classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d", null ],
+    [ "nextFrameDEV", "classArduboy2Base.html#a45c6a2b014749458b68f4866b274e033", null ],
     [ "notPressed", "classArduboy2Base.html#a8f2bb579fb1c4ad8a24484916f5e234d", null ],
     [ "pollButtons", "classArduboy2Base.html#a2f275c7d4a3438f7be543a02eb9a7d00", null ],
     [ "pressed", "classArduboy2Base.html#a1a294744f7886588b6864f1df75a91ba", null ],
+    [ "readUnitID", "classArduboy2Base.html#a29a141cc127fb9abc8de096ae3a93aa0", null ],
+    [ "readUnitName", "classArduboy2Base.html#a4c1882ecdacf268c4348ff1e12cf346e", null ],
     [ "setFrameRate", "classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d", null ],
     [ "systemButtons", "classArduboy2Base.html#ad6dc5d0b396938daee143010bba64182", null ],
-    [ "audio", "classArduboy2Base.html#a4b51510fd8ea2a35e0e4098af209ca88", null ]
+    [ "writeUnitID", "classArduboy2Base.html#a1947d7386a7800643d73743f8ce00f41", null ],
+    [ "writeUnitName", "classArduboy2Base.html#a8d63d2fc0f45ab6af82616bbe6422785", null ],
+    [ "audio", "classArduboy2Base.html#a4b51510fd8ea2a35e0e4098af209ca88", null ],
+    [ "frameCount", "classArduboy2Base.html#a281ecc7c3df686e3e87584794442cda9", null ]
 ];

@@ -1,6 +1,8 @@
 var searchData=
 [
+  ['software_20license_20agreements',['Software License Agreements',['../licenses.html',1,'']]],
   ['saveonoff',['saveOnOff',['../classArduboy2Audio.html#ad6c5d1f7cd4da7e2bda606586ae38e31',1,'Arduboy2Audio']]],
+  ['sbuffer',['sBuffer',['../classArduboy2Base.html#a001a0e77a58306f871fe47135fabb872',1,'Arduboy2Base']]],
   ['sendlcdcommand',['sendLCDCommand',['../classArduboy2Core.html#ae08f6a422811075fad1faa3c66b09f19',1,'Arduboy2Core']]],
   ['setcursor',['setCursor',['../classArduboy2.html#a5ab1d707ecde0811f77e402c61de25a3',1,'Arduboy2']]],
   ['setframerate',['setFrameRate',['../classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d',1,'Arduboy2Base']]],

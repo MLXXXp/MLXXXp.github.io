@@ -7,5 +7,6 @@ var searchData=
   ['filltriangle',['fillTriangle',['../classArduboy2Base.html#ae8452e4d13b073aa81a0e658a6257b71',1,'Arduboy2Base']]],
   ['flashlight',['flashlight',['../classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a',1,'Arduboy2Base']]],
   ['fliphorizontal',['flipHorizontal',['../classArduboy2Core.html#a40fc996602d64545d81ea857e74b23f7',1,'Arduboy2Core']]],
-  ['flipvertical',['flipVertical',['../classArduboy2Core.html#a8125a3776ac990b56f7225c9419a527d',1,'Arduboy2Core']]]
+  ['flipvertical',['flipVertical',['../classArduboy2Core.html#a8125a3776ac990b56f7225c9419a527d',1,'Arduboy2Core']]],
+  ['framecount',['frameCount',['../classArduboy2Base.html#a281ecc7c3df686e3e87584794442cda9',1,'Arduboy2Base']]]
 ];

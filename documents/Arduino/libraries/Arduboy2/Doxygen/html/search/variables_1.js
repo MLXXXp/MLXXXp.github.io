@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['height',['height',['../structRect.html#abde7f225b3160198d13a743a33231391',1,'Rect']]]
+  ['framecount',['frameCount',['../classArduboy2Base.html#a281ecc7c3df686e3e87584794442cda9',1,'Arduboy2Base']]]
 ];

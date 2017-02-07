@@ -1,4 +1,4 @@
 <map id="Arduboy2Base" name="Arduboy2Base">
 <area shape="rect" id="node2" href="$classArduboy2Core.html" title="Lower level functions generally dealing directly with the hardware. " alt="" coords="5,5,167,317"/>
-<area shape="rect" id="node3" href="$classArduboy2Audio.html" title="Provide speaker and sound control. " alt="" coords="191,93,307,229"/>
+<area shape="rect" id="node3" href="$classArduboy2Audio.html" title="Provide speaker and sound control. " alt="" coords="191,86,307,237"/>
 </map>

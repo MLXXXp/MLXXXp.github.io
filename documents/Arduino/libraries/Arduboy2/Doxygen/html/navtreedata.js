@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "Arduboy2 Library", "index.html", [
+    [ "Software License Agreements", "licenses.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
