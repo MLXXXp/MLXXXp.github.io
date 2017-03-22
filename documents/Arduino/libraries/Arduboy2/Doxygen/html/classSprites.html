@@ -149,11 +149,12 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A class for drawing animated sprites from image and mask bitmaps. </p>
 <p>The functions in this class will draw to the screen buffer an image contained in an array located in program memory. A mask can also be specified or implied, which dictates how existing pixels in the buffer, within the image boundaries, will be affected.</p>
 <p>A sprite or mask array contains one or more "frames". Each frame is intended to show whatever the sprite represents in a different position, such as the various poses for a running or jumping character. By specifying a different frame each time the sprite is drawn, it can be animated.</p>
-<p>Each array begins with values for the width and height of the sprite, in pixels. The width can be any value. The height must be a multiple of 8 pixels, but with proper masking, a sprite of any height can be created.</p>
-<p>After the width and height values, the remainder of the array contains the image and/or mask data for each frame. Each byte represents a vertical column of 8 pixels with the least significant bit (bit 0) at the top. The bytes are drawn as 8 pixel high rows from left to right, top to bottom. When the end of a row is reached, as specified by the width value, the next byte in the array will be the start of the next row.</p>
+<p>Each image array begins with values for the width and height of the sprite, in pixels. The width can be any value. The height must be a multiple of 8 pixels, but with proper masking, a sprite of any height can be created.</p>
+<p>For a separate mask array, as is used with <code><a class="el" href="classSprites.html#a6f52e84e29b6180797a5ab53ccab948d" title="Draw a sprite using a separate image and mask array. ">drawExternalMask()</a></code>, the width and height are not included but must contain data of the same dimensions as the corresponding image array.</p>
+<p>Following the width and height values for an image array, or the from the beginning of a separate mask array, the array contains the image and/or mask data for each frame. Each byte represents a vertical column of 8 pixels with the least significant bit (bit 0) at the top. The bytes are drawn as 8 pixel high rows from left to right, top to bottom. When the end of a row is reached, as specified by the width value, the next byte in the array will be the start of the next row.</p>
 <p>Data for each frame after the first one immediately follows the previous frame. Frame numbers start at 0. </p>
 
-<p>Definition at line <a class="el" href="Sprites_8h_source.html#l00048">48</a> of file <a class="el" href="Sprites_8h_source.html">Sprites.h</a>.</p>
+<p>Definition at line <a class="el" href="Sprites_8h_source.html#l00053">53</a> of file <a class="el" href="Sprites_8h_source.html">Sprites.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a361d7c2e4ce53e93ee71e8b11d72fef0"></a>
 <div class="memitem">
@@ -501,7 +502,7 @@ OO.OO  OOOOO   OOOOO
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSprites.html">Sprites</a></li>
-    <li class="footer">Generated on Tue Feb 7 2017 15:41:27 for Arduboy2 Library by
+    <li class="footer">Generated on Wed Mar 22 2017 18:26:43 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
