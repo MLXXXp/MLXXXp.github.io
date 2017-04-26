@@ -1,5 +1,5 @@
 <map id="src/Arduboy2.h" name="src/Arduboy2.h">
-<area shape="rect" id="node4" href="$Arduboy2Core_8h.html" title="The Arduboy2Core class for Arduboy hardware initilization and control. " alt="" coords="184,80,300,107"/>
-<area shape="rect" id="node9" href="$Sprites_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. " alt="" coords="626,80,701,107"/>
-<area shape="rect" id="node11" href="$Arduboy2Audio_8h.html" title="The Arduboy2Audio class for speaker and sound control. " alt="" coords="429,80,551,107"/>
+<area shape="rect" id="node4" href="$Arduboy2Core_8h.html" title="The Arduboy2Core class for Arduboy hardware initilization and control. " alt="" coords="110,80,226,107"/>
+<area shape="rect" id="node8" href="$Sprites_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. " alt="" coords="499,80,573,107"/>
+<area shape="rect" id="node10" href="$Arduboy2Audio_8h.html" title="The Arduboy2Audio class for speaker and sound control. " alt="" coords="353,80,474,107"/>
 </map>

@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['digitalwritergb',['digitalWriteRGB',['../classArduboy2Core.html#a8bb32aa7c24306aa2c01517648f9a1cf',1,'Arduboy2Core']]],
+  ['delayshort',['delayShort',['../classArduboy2Core.html#acf720ac7696993566368f30df54ce641',1,'Arduboy2Core']]],
+  ['digitalwritergb',['digitalWriteRGB',['../classArduboy2Core.html#a8bb32aa7c24306aa2c01517648f9a1cf',1,'Arduboy2Core::digitalWriteRGB(uint8_t red, uint8_t green, uint8_t blue)'],['../classArduboy2Core.html#a52c2437adda2e9b6972b3dd50d867b4c',1,'Arduboy2Core::digitalWriteRGB(uint8_t color, uint8_t val)']]],
   ['display',['display',['../classArduboy2Base.html#aff2f9bc358bf3090cf4ffa3bd3a59fd6',1,'Arduboy2Base::display()'],['../classArduboy2Base.html#a78dd8629716412b30a4df9d012921a78',1,'Arduboy2Base::display(bool clear)']]],
+  ['displayoff',['displayOff',['../classArduboy2Core.html#a8545a227303d22a039f22a9500828ab8',1,'Arduboy2Core']]],
+  ['displayon',['displayOn',['../classArduboy2Core.html#aeb51abef6c0eb7a1bbf164b0bf438c1c',1,'Arduboy2Core']]],
   ['drawbitmap',['drawBitmap',['../classArduboy2Base.html#a2d57427a8e6bc9d5f5b5630e4fb07c3c',1,'Arduboy2Base']]],
   ['drawchar',['drawChar',['../classArduboy2.html#a00584a0fab72d1128cc343989e1f6413',1,'Arduboy2']]],
   ['drawcircle',['drawCircle',['../classArduboy2Base.html#aca29d195680257cafcb04e75f1a0ecd0',1,'Arduboy2Base']]],

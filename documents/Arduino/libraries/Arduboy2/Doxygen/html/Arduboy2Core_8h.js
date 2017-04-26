@@ -14,8 +14,6 @@ var Arduboy2Core_8h =
     [ "RGB_OFF", "Arduboy2Core_8h.html#a143edb2a30dcec26a3ec0a41d1082010", null ],
     [ "RGB_ON", "Arduboy2Core_8h.html#aa0f00ae5088da28164644bf5925ff1c9", null ],
     [ "RIGHT_BUTTON", "Arduboy2Core_8h.html#aeb17351958162535ab6af2cd6b030955", null ],
-    [ "RX_LED", "Arduboy2Core_8h.html#ac99c686438cf1684647d49655e57ac62", null ],
-    [ "TX_LED", "Arduboy2Core_8h.html#a8bf8434390a15fe10995336ad7affc9d", null ],
     [ "UP_BUTTON", "Arduboy2Core_8h.html#ae6ab1863af621c09d3590d290a06eee4", null ],
     [ "WIDTH", "Arduboy2Core_8h.html#a241aeeb764887ae5e3de58b98f04b16d", null ]
 ];

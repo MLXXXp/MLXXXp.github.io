@@ -127,8 +127,8 @@ $(document).ready(function(){initNavTree('classArduboy2Base.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classArduboy2Base__inherit__graph.png" border="0" usemap="#Arduboy2Base_inherit__map" alt="Inheritance graph"/></div>
 <map name="Arduboy2Base_inherit__map" id="Arduboy2Base_inherit__map">
-<area shape="rect" id="node3" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. " alt="" coords="9,784,163,1096"/>
-<area shape="rect" id="node2" href="classArduboy2Core.html" title="Lower level functions generally dealing directly with the hardware. " alt="" coords="5,5,167,317"/>
+<area shape="rect" id="node3" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. " alt="" coords="31,872,186,1199"/>
+<area shape="rect" id="node2" href="classArduboy2Core.html" title="Lower level functions generally dealing directly with the hardware. " alt="" coords="28,5,189,317"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -149,14 +149,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8a917f8ad5bc1a81c85e12ce2ad4a317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the hardware, display the boot logo, provide boot utilities, etc.  <a href="#a8a917f8ad5bc1a81c85e12ce2ad4a317">More...</a><br /></td></tr>
 <tr class="separator:a8a917f8ad5bc1a81c85e12ce2ad4a317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f9d1ef6c6b2b755a742653f972325a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a">flashlight</a> ()</td></tr>
-<tr class="memdesc:af8f9d1ef6c6b2b755a742653f972325a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flashlight mode turns the RGB LED and display fully on.  <a href="#af8f9d1ef6c6b2b755a742653f972325a">More...</a><br /></td></tr>
+<tr class="memdesc:af8f9d1ef6c6b2b755a742653f972325a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn the RGB LED and display fully on to act as a small flashlight/torch.  <a href="#af8f9d1ef6c6b2b755a742653f972325a">More...</a><br /></td></tr>
 <tr class="separator:af8f9d1ef6c6b2b755a742653f972325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6dc5d0b396938daee143010bba64182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#ad6dc5d0b396938daee143010bba64182">systemButtons</a> ()</td></tr>
 <tr class="memdesc:ad6dc5d0b396938daee143010bba64182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle buttons held on startup for system control.  <a href="#ad6dc5d0b396938daee143010bba64182">More...</a><br /></td></tr>
 <tr class="separator:ad6dc5d0b396938daee143010bba64182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90e352941396d013789dac951d1230fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe">bootLogo</a> ()</td></tr>
-<tr class="memdesc:a90e352941396d013789dac951d1230fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the boot logo sequence.  <a href="#a90e352941396d013789dac951d1230fe">More...</a><br /></td></tr>
+<tr class="memdesc:a90e352941396d013789dac951d1230fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the boot logo sequence using <code><a class="el" href="classArduboy2Base.html#a2d57427a8e6bc9d5f5b5630e4fb07c3c" title="Draw a bitmap from an array in program memory. ">drawBitmap()</a></code>.  <a href="#a90e352941396d013789dac951d1230fe">More...</a><br /></td></tr>
 <tr class="separator:a90e352941396d013789dac951d1230fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae802eed75c520614c5a9f46248e90369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#ae802eed75c520614c5a9f46248e90369">bootLogoCompressed</a> ()</td></tr>
+<tr class="memdesc:ae802eed75c520614c5a9f46248e90369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the boot logo sequence using <code><a class="el" href="classArduboy2Base.html#ab86319e224e1a902d231ce4a9e10ad22" title="Draw a bitmap from an array of compressed data. ">drawCompressed()</a></code>.  <a href="#ae802eed75c520614c5a9f46248e90369">More...</a><br /></td></tr>
+<tr class="separator:ae802eed75c520614c5a9f46248e90369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd2e4ea2e16b49333fb55ea00b85740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a0bd2e4ea2e16b49333fb55ea00b85740">bootLogoSpritesSelfMasked</a> ()</td></tr>
+<tr class="memdesc:a0bd2e4ea2e16b49333fb55ea00b85740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the boot logo sequence using the <code><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a></code> class <code>drawSelfMasked()</code> function.  <a href="#a0bd2e4ea2e16b49333fb55ea00b85740">More...</a><br /></td></tr>
+<tr class="separator:a0bd2e4ea2e16b49333fb55ea00b85740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e57d796d1697aad7773e1c005765dcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a6e57d796d1697aad7773e1c005765dcf">bootLogoSpritesOverwrite</a> ()</td></tr>
+<tr class="memdesc:a6e57d796d1697aad7773e1c005765dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the boot logo sequence using the <code><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a></code> class <code>drawOverwrite()</code> function.  <a href="#a6e57d796d1697aad7773e1c005765dcf">More...</a><br /></td></tr>
+<tr class="separator:a6e57d796d1697aad7773e1c005765dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39350bebcbaf87b62ea1d0e78b390e33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a39350bebcbaf87b62ea1d0e78b390e33">bootLogoShell</a> (void(*drawLogo)(int16_t))</td></tr>
+<tr class="memdesc:a39350bebcbaf87b62ea1d0e78b390e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the boot logo sequence using the provided function.  <a href="#a39350bebcbaf87b62ea1d0e78b390e33">More...</a><br /></td></tr>
+<tr class="separator:a39350bebcbaf87b62ea1d0e78b390e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4eac9cc4d32476c3b57bb347e816bae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a4eac9cc4d32476c3b57bb347e816bae8">clear</a> ()</td></tr>
 <tr class="memdesc:a4eac9cc4d32476c3b57bb347e816bae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the display buffer.  <a href="#a4eac9cc4d32476c3b57bb347e816bae8">More...</a><br /></td></tr>
 <tr class="separator:a4eac9cc4d32476c3b57bb347e816bae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,15 +220,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8452e4d13b073aa81a0e658a6257b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#ae8452e4d13b073aa81a0e658a6257b71">fillTriangle</a> (int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint8_t color=<a class="el" href="Arduboy2_8h.html#a87b537f5fa5c109d3c05c13d6b18f382">WHITE</a>)</td></tr>
 <tr class="memdesc:ae8452e4d13b073aa81a0e658a6257b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a filled-in triangle given the coordinates of each corner.  <a href="#ae8452e4d13b073aa81a0e658a6257b71">More...</a><br /></td></tr>
 <tr class="separator:ae8452e4d13b073aa81a0e658a6257b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d57427a8e6bc9d5f5b5630e4fb07c3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a2d57427a8e6bc9d5f5b5630e4fb07c3c">drawBitmap</a> (int16_t x, int16_t y, const uint8_t *bitmap, uint8_t w, uint8_t h, uint8_t color=<a class="el" href="Arduboy2_8h.html#a87b537f5fa5c109d3c05c13d6b18f382">WHITE</a>)</td></tr>
-<tr class="memdesc:a2d57427a8e6bc9d5f5b5630e4fb07c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a bitmap from an array in program memory.  <a href="#a2d57427a8e6bc9d5f5b5630e4fb07c3c">More...</a><br /></td></tr>
-<tr class="separator:a2d57427a8e6bc9d5f5b5630e4fb07c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1d7deaa056d6009a3c634c6f892afb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#af1d7deaa056d6009a3c634c6f892afb4">drawSlowXYBitmap</a> (int16_t x, int16_t y, const uint8_t *bitmap, uint8_t w, uint8_t h, uint8_t color=<a class="el" href="Arduboy2_8h.html#a87b537f5fa5c109d3c05c13d6b18f382">WHITE</a>)</td></tr>
 <tr class="memdesc:af1d7deaa056d6009a3c634c6f892afb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a bitmap from a horizontally oriented array in program memory.  <a href="#af1d7deaa056d6009a3c634c6f892afb4">More...</a><br /></td></tr>
 <tr class="separator:af1d7deaa056d6009a3c634c6f892afb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab86319e224e1a902d231ce4a9e10ad22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#ab86319e224e1a902d231ce4a9e10ad22">drawCompressed</a> (int16_t sx, int16_t sy, const uint8_t *bitmap, uint8_t color=<a class="el" href="Arduboy2_8h.html#a87b537f5fa5c109d3c05c13d6b18f382">WHITE</a>)</td></tr>
-<tr class="memdesc:ab86319e224e1a902d231ce4a9e10ad22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a bitmap from an array of compressed data.  <a href="#ab86319e224e1a902d231ce4a9e10ad22">More...</a><br /></td></tr>
-<tr class="separator:ab86319e224e1a902d231ce4a9e10ad22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacd29034dd9dbd15e0906924c9e3e379"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#aacd29034dd9dbd15e0906924c9e3e379">getBuffer</a> ()</td></tr>
 <tr class="memdesc:aacd29034dd9dbd15e0906924c9e3e379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the display buffer in RAM.  <a href="#aacd29034dd9dbd15e0906924c9e3e379">More...</a><br /></td></tr>
 <tr class="separator:aacd29034dd9dbd15e0906924c9e3e379"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,9 +277,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8d63d2fc0f45ab6af82616bbe6422785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a8d63d2fc0f45ab6af82616bbe6422785">writeUnitName</a> (char *name)</td></tr>
 <tr class="memdesc:a8d63d2fc0f45ab6af82616bbe6422785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a unit name to system EEPROM.  <a href="#a8d63d2fc0f45ab6af82616bbe6422785">More...</a><br /></td></tr>
 <tr class="separator:a8d63d2fc0f45ab6af82616bbe6422785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f80c41f082ae8dd5f2462d1ead199a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a02f80c41f082ae8dd5f2462d1ead199a">readShowUnitNameFlag</a> ()</td></tr>
+<tr class="memdesc:a02f80c41f082ae8dd5f2462d1ead199a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the "Show Unit Name" flag in system EEPROM.  <a href="#a02f80c41f082ae8dd5f2462d1ead199a">More...</a><br /></td></tr>
+<tr class="separator:a02f80c41f082ae8dd5f2462d1ead199a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121a9276b05c2d206fddb932f2ca98da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a121a9276b05c2d206fddb932f2ca98da">writeShowUnitNameFlag</a> (bool val)</td></tr>
+<tr class="memdesc:a121a9276b05c2d206fddb932f2ca98da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the "Show Unit Name" flag in system EEPROM.  <a href="#a121a9276b05c2d206fddb932f2ca98da">More...</a><br /></td></tr>
+<tr class="separator:a121a9276b05c2d206fddb932f2ca98da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2d57427a8e6bc9d5f5b5630e4fb07c3c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#a2d57427a8e6bc9d5f5b5630e4fb07c3c">drawBitmap</a> (int16_t x, int16_t y, const uint8_t *bitmap, uint8_t w, uint8_t h, uint8_t color=<a class="el" href="Arduboy2_8h.html#a87b537f5fa5c109d3c05c13d6b18f382">WHITE</a>)</td></tr>
+<tr class="memdesc:a2d57427a8e6bc9d5f5b5630e4fb07c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a bitmap from an array in program memory.  <a href="#a2d57427a8e6bc9d5f5b5630e4fb07c3c">More...</a><br /></td></tr>
+<tr class="separator:a2d57427a8e6bc9d5f5b5630e4fb07c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86319e224e1a902d231ce4a9e10ad22"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Base.html#ab86319e224e1a902d231ce4a9e10ad22">drawCompressed</a> (int16_t sx, int16_t sy, const uint8_t *bitmap, uint8_t color=<a class="el" href="Arduboy2_8h.html#a87b537f5fa5c109d3c05c13d6b18f382">WHITE</a>)</td></tr>
+<tr class="memdesc:ab86319e224e1a902d231ce4a9e10ad22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a bitmap from an array of compressed data.  <a href="#ab86319e224e1a902d231ce4a9e10ad22">More...</a><br /></td></tr>
+<tr class="separator:ab86319e224e1a902d231ce4a9e10ad22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e374646f86be65b5c8f6b11ddc93382"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#a4e374646f86be65b5c8f6b11ddc93382">idle</a> ()</td></tr>
 <tr class="memdesc:a4e374646f86be65b5c8f6b11ddc93382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Idle the CPU to save power.  <a href="#a4e374646f86be65b5c8f6b11ddc93382">More...</a><br /></td></tr>
 <tr class="separator:a4e374646f86be65b5c8f6b11ddc93382"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,6 +301,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a65dd968eff178df135150cdecef9a7ba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#a65dd968eff178df135150cdecef9a7ba">LCDCommandMode</a> ()</td></tr>
 <tr class="memdesc:a65dd968eff178df135150cdecef9a7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the display into command mode.  <a href="#a65dd968eff178df135150cdecef9a7ba">More...</a><br /></td></tr>
 <tr class="separator:a65dd968eff178df135150cdecef9a7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe19d50fc0b9c845369caf41fef590c9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#afe19d50fc0b9c845369caf41fef590c9">SPItransfer</a> (uint8_t data)</td></tr>
+<tr class="memdesc:afe19d50fc0b9c845369caf41fef590c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer a byte to the display.  <a href="#afe19d50fc0b9c845369caf41fef590c9">More...</a><br /></td></tr>
+<tr class="separator:afe19d50fc0b9c845369caf41fef590c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8545a227303d22a039f22a9500828ab8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#a8545a227303d22a039f22a9500828ab8">displayOff</a> ()</td></tr>
+<tr class="memdesc:a8545a227303d22a039f22a9500828ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn the display off.  <a href="#a8545a227303d22a039f22a9500828ab8">More...</a><br /></td></tr>
+<tr class="separator:a8545a227303d22a039f22a9500828ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb51abef6c0eb7a1bbf164b0bf438c1c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#aeb51abef6c0eb7a1bbf164b0bf438c1c">displayOn</a> ()</td></tr>
+<tr class="memdesc:aeb51abef6c0eb7a1bbf164b0bf438c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn the display on.  <a href="#aeb51abef6c0eb7a1bbf164b0bf438c1c">More...</a><br /></td></tr>
+<tr class="separator:aeb51abef6c0eb7a1bbf164b0bf438c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24db7ae688ae9cc5a83aaf28a16a723d"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#a24db7ae688ae9cc5a83aaf28a16a723d">width</a> ()</td></tr>
 <tr class="memdesc:a24db7ae688ae9cc5a83aaf28a16a723d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the width of the display in pixels.  <a href="#a24db7ae688ae9cc5a83aaf28a16a723d">More...</a><br /></td></tr>
 <tr class="separator:a24db7ae688ae9cc5a83aaf28a16a723d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,7 +317,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac03114470757bb68d7f9dd87a00d3549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the height of the display in pixels.  <a href="#ac03114470757bb68d7f9dd87a00d3549">More...</a><br /></td></tr>
 <tr class="separator:ac03114470757bb68d7f9dd87a00d3549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0556f0588233e9f88dac967178be6454"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#a0556f0588233e9f88dac967178be6454">buttonsState</a> ()</td></tr>
-<tr class="memdesc:a0556f0588233e9f88dac967178be6454"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current state of all buttons as a bitmask.  <a href="#a0556f0588233e9f88dac967178be6454">More...</a><br /></td></tr>
+<tr class="memdesc:a0556f0588233e9f88dac967178be6454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current state of all buttons as a bitmask.  <a href="#a0556f0588233e9f88dac967178be6454">More...</a><br /></td></tr>
 <tr class="separator:a0556f0588233e9f88dac967178be6454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1774e369d406def93242881abd43bb3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#ae1774e369d406def93242881abd43bb3">paint8Pixels</a> (uint8_t pixels)</td></tr>
 <tr class="memdesc:ae1774e369d406def93242881abd43bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paint 8 pixels vertically to the display.  <a href="#ae1774e369d406def93242881abd43bb3">More...</a><br /></td></tr>
@@ -325,9 +352,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8bb32aa7c24306aa2c01517648f9a1cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#a8bb32aa7c24306aa2c01517648f9a1cf">digitalWriteRGB</a> (uint8_t red, uint8_t green, uint8_t blue)</td></tr>
 <tr class="memdesc:a8bb32aa7c24306aa2c01517648f9a1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the RGB LEDs digitally, to either fully on or fully off.  <a href="#a8bb32aa7c24306aa2c01517648f9a1cf">More...</a><br /></td></tr>
 <tr class="separator:a8bb32aa7c24306aa2c01517648f9a1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c2437adda2e9b6972b3dd50d867b4c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#a52c2437adda2e9b6972b3dd50d867b4c">digitalWriteRGB</a> (uint8_t color, uint8_t val)</td></tr>
+<tr class="memdesc:a52c2437adda2e9b6972b3dd50d867b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one of the RGB LEDs digitally, to either fully on or fully off.  <a href="#a52c2437adda2e9b6972b3dd50d867b4c">More...</a><br /></td></tr>
+<tr class="separator:a52c2437adda2e9b6972b3dd50d867b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ae236911e49634dbd7bfa1a26a4ba1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1">boot</a> ()</td></tr>
 <tr class="memdesc:a06ae236911e49634dbd7bfa1a26a4ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the Arduboy's hardware.  <a href="#a06ae236911e49634dbd7bfa1a26a4ba1">More...</a><br /></td></tr>
 <tr class="separator:a06ae236911e49634dbd7bfa1a26a4ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d782c9cf56f2417fd7deacaa27a03b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#a16d782c9cf56f2417fd7deacaa27a03b">safeMode</a> ()</td></tr>
+<tr class="memdesc:a16d782c9cf56f2417fd7deacaa27a03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow upload when the bootloader "magic number" could be corrupted.  <a href="#a16d782c9cf56f2417fd7deacaa27a03b">More...</a><br /></td></tr>
+<tr class="separator:a16d782c9cf56f2417fd7deacaa27a03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf720ac7696993566368f30df54ce641"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArduboy2Core.html#acf720ac7696993566368f30df54ce641">delayShort</a> (uint16_t ms) __attribute__((noinline))</td></tr>
+<tr class="memdesc:acf720ac7696993566368f30df54ce641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay for the number of milliseconds, specified as a 16 bit value.  <a href="#acf720ac7696993566368f30df54ce641">More...</a><br /></td></tr>
+<tr class="separator:acf720ac7696993566368f30df54ce641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -353,7 +389,7 @@ Static Public Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>A friend class named <em>Arduboy2Ex</em> is declared by this class. The intention is to allow a sketch to create an <em>Arduboy2Ex</em> class which would have access to the private and protected members of the <a class="el" href="classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output. ">Arduboy2Base</a> class. It is hoped that this may eliminate the need to create an entire local copy of the library, in order to extend the functionality, in most circumstances. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. ">Arduboy2</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00161">161</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00160">160</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a54f6301ddf9197e6f4fca095faf845a2"></a>
 <div class="memitem">
@@ -389,7 +425,7 @@ Static Public Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>All pixels will be lit even if the display is in inverted mode.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a60cb1b3076a5139bca3dfed43351330f" title="Invert the entire display or set it back to normal. ">invert()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00310">310</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00375">375</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -439,7 +475,7 @@ Static Public Attributes</h2></td></tr>
 <p>Blank the display screen by setting all pixels off. </p>
 <p>All pixels on the screen will be written with a value of 0 to turn them off. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00288">288</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00353">353</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -469,7 +505,7 @@ Static Public Attributes</h2></td></tr>
 <p>This function is called by begin() so isn't normally called within a sketch. However, in order to free up some code space, by eliminating some of the start up features, it can be called in place of begin(). The functions that begin() would call after <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> can then be called to add back in some of the start up features, if desired. See the README file or documentation on the main page for more details.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">Arduboy2Base::begin()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00110">110</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00076">76</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -486,14 +522,107 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Display the boot logo sequence. </p>
+<p>Display the boot logo sequence using <code><a class="el" href="classArduboy2Base.html#a2d57427a8e6bc9d5f5b5630e4fb07c3c" title="Draw a bitmap from an array in program memory. ">drawBitmap()</a></code>. </p>
 <p>This function is called by <code><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a></code> and can be called by a sketch after <code><a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a></code>.</p>
 <p>The Arduboy logo scrolls down from the top of the screen to the center while the RGB LEDs light in sequence.</p>
 <p>If the RIGHT button is pressed while the logo is scrolling down, the boot logo sequence will be aborted. This can be useful for developers who wish to quickly start testing, or anyone else who is impatient and wants to go straight to the actual sketch.</p>
 <p>This function calls <code>bootLogoExtra()</code> after the logo stops scrolling down, which derived classes can implement to add additional information to the logo screen. The <code><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. ">Arduboy2</a></code> class uses this to display the unit name.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> <a class="el" href="classArduboy2.html#a9687ed92d84cb1055c83cd479aa7a4e5" title="Show the unit name at the bottom of the boot logo screen. ">Arduboy2::bootLogoExtra()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> <a class="el" href="classArduboy2.html#a9687ed92d84cb1055c83cd479aa7a4e5" title="Show the unit name at the bottom of the boot logo screen. ">Arduboy2::bootLogoExtra()</a> <a class="el" href="classArduboy2Base.html#a39350bebcbaf87b62ea1d0e78b390e33" title="Display the boot logo sequence using the provided function. ">bootLogoShell()</a> <a class="el" href="classArduboy2.html#a0b05723ce2c5c8655111e1bbc92fa276" title="Display the boot logo sequence using printed text instead of a bitmap. ">Arduboy2::bootLogoText()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00096">96</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00105">105</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae802eed75c520614c5a9f46248e90369"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Base::bootLogoCompressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display the boot logo sequence using <code><a class="el" href="classArduboy2Base.html#ab86319e224e1a902d231ce4a9e10ad22" title="Draw a bitmap from an array of compressed data. ">drawCompressed()</a></code>. </p>
+<p>This function can be called by a sketch after <code><a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a></code> as an alternative to <code><a class="el" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe" title="Display the boot logo sequence using drawBitmap(). ">bootLogo()</a></code>. This may reduce code size if the sketch itself uses <code><a class="el" href="classArduboy2Base.html#ab86319e224e1a902d231ce4a9e10ad22" title="Draw a bitmap from an array of compressed data. ">drawCompressed()</a></code>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe" title="Display the boot logo sequence using drawBitmap(). ">bootLogo()</a> <a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00115">115</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a39350bebcbaf87b62ea1d0e78b390e33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Base::bootLogoShell </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(int16_t)&#160;</td>
+          <td class="paramname"><em>drawLogo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display the boot logo sequence using the provided function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drawLogo</td><td>A reference to a function which will draw the boot logo at the given Y position.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This common function executes the sequence to display the boot logo. It is called by <code><a class="el" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe" title="Display the boot logo sequence using drawBitmap(). ">bootLogo()</a></code> and other similar functions which provide it with a reference to a function which will do the actual drawing of the logo.</p>
+<p>The prototype for the function provided to draw the logo is:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> drawLogo(int16_t y);</div></div><!-- fragment --><p>The y parameter is the Y offset for the top of the logo. It is expected that the logo will be 16 pixels high and centered horizontally. This will result in the logo stopping in the middle of the screen at the end of the sequence. If the logo height is not 16 pixels, the Y value can be adjusted to compensate.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe" title="Display the boot logo sequence using drawBitmap(). ">bootLogo()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00147">147</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e57d796d1697aad7773e1c005765dcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Base::bootLogoSpritesOverwrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display the boot logo sequence using the <code><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a></code> class <code>drawOverwrite()</code> function. </p>
+<p>This function can be called by a sketch after <code><a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a></code> as an alternative to <code><a class="el" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe" title="Display the boot logo sequence using drawBitmap(). ">bootLogo()</a></code>. This may reduce code size if the sketch itself uses <code><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a></code> class functions.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe" title="Display the boot logo sequence using drawBitmap(). ">bootLogo()</a> <a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> <a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00135">135</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bd2e4ea2e16b49333fb55ea00b85740"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Base::bootLogoSpritesSelfMasked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display the boot logo sequence using the <code><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a></code> class <code>drawSelfMasked()</code> function. </p>
+<p>This function can be called by a sketch after <code><a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a></code> as an alternative to <code><a class="el" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe" title="Display the boot logo sequence using drawBitmap(). ">bootLogo()</a></code>. This may reduce code size if the sketch itself uses <code><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a></code> class functions.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe" title="Display the boot logo sequence using drawBitmap(). ">bootLogo()</a> <a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> <a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00125">125</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -518,13 +647,13 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>get current state of all buttons as a bitmask. </p>
+<p>Get the current state of all buttons as a bitmask. </p>
 <dl class="section return"><dt>Returns</dt><dd>A bitmask of the state of all the buttons.</dd></dl>
 <p>The returned mask contains a bit for each button. For any pressed button, its bit will be 1. For released buttons their associated bits will be 0.</p>
 <p>The following defined mask values should be used for the buttons:</p>
 <p>LEFT_BUTTON, RIGHT_BUTTON, UP_BUTTON, DOWN_BUTTON, A_BUTTON, B_BUTTON </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00355">355</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00449">449</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +674,7 @@ Static Public Attributes</h2></td></tr>
 <p>The entire contents of the screen buffer are cleared to BLACK.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a78dd8629716412b30a4df9d012921a78" title="Copy the contents of the display buffer to the display. The display buffer can optionally be cleared...">display(bool)</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00213">213</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00270">270</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -585,7 +714,7 @@ Static Public Attributes</h2></td></tr>
 <p>This function is intended to detemine if an object, whose boundaries are are defined by the given rectangle, is in contact with the given point.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structPoint.html" title="An object to define a single point for collision functions. ">Point</a> <a class="el" href="structRect.html" title="A rectangle object for collision functions. ">Rect</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00912">912</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l01004">1004</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -624,7 +753,7 @@ Static Public Attributes</h2></td></tr>
 <p>This function is intended to detemine if an object, whose boundaries are are defined by the given rectangle, is in contact with another rectangular object.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structRect.html" title="A rectangle object for collision functions. ">Rect</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00918">918</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l01010">1010</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -648,7 +777,42 @@ Static Public Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>The percentage returned can be higher than 100 if more time is spent processing a frame than the time allotted per frame. This would indicate that the frame rate should be made slower or the frame processing code should be optimized to run faster.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d" title="Set the frame rate used by the frame control functions. ">setFrameRate()</a> <a class="el" href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d" title="Indicate that it&#39;s time to render the next frame. ">nextFrame()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00184">184</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00250">250</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf720ac7696993566368f30df54ce641"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Core::delayShort </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delay for the number of milliseconds, specified as a 16 bit value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>The delay in milliseconds.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function works the same as the Arduino <code>delay()</code> function except the provided value is 16 bits long, so the maximum delay allowed is 65535 milliseconds (about 65.5 seconds). Using this function instead of Arduino <code>delay()</code> will save a few bytes of code. </p>
+
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00474">474</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -697,7 +861,7 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>The RGB LED is actually individual red, green and blue LEDs placed very close together in a single package. This function will set each LED either on or off, to set the RGB LED to 7 different colors at their highest brightness or turn it off.</p>
+<p>The RGB LED is actually individual red, green and blue LEDs placed very close together in a single package. This 3 parameter version of the function will set each LED either on or off, to set the RGB LED to 7 different colors at their highest brightness or turn it off.</p>
 <p>The colors are as follows: </p><pre class="fragment">RED LED   GREEN_LED   BLUE_LED   COLOR
 -------   ---------  --------    -----
 RGB_OFF    RGB_OFF    RGB_OFF    OFF
@@ -709,9 +873,56 @@ RGB_ON     RGB_OFF    RGB_ON     Magenta
 RGB_ON     RGB_ON     RGB_OFF    Yellow
 RGB_ON     RGB_ON     RGB_ON     White
 </pre><dl class="section note"><dt>Note</dt><dd>Many of the Kickstarter Arduboys were accidentally shipped with the RGB LED installed incorrectly. For these units, the green LED cannot be lit. As long as the green led is set to off, turning on the red LED will actually light the blue LED and turning on the blue LED will actually light the red LED. If the green LED is turned on, none of the LEDs will light.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a00b90ecdc25c5f31eab40ba4a906ba8b" title="Set the light output of the RGB LED. ">setRGBled()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a52c2437adda2e9b6972b3dd50d867b4c" title="Set one of the RGB LEDs digitally, to either fully on or fully off. ">digitalWriteRGB(uint8_t, uint8_t)</a> <a class="el" href="classArduboy2Core.html#a00b90ecdc25c5f31eab40ba4a906ba8b" title="Set the light output of the RGB LED. ">setRGBled()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00342">342</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00409">409</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52c2437adda2e9b6972b3dd50d867b4c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Core::digitalWriteRGB </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set one of the RGB LEDs digitally, to either fully on or fully off. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>The name of the LED to set. The value given should be one of RED_LED, GREEN_LED or BLUE_LED.</td></tr>
+    <tr><td class="paramname">val</td><td>Indicates whether to turn the specified LED on or off. The value given should be RGB_ON or RGB_OFF.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This 2 parameter version of the function will set a single LED within the RGB LED either fully on or fully off. See the description of the 3 parameter version of this function for more details on the RGB LED.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a8bb32aa7c24306aa2c01517648f9a1cf" title="Set the RGB LEDs digitally, to either fully on or fully off. ">digitalWriteRGB(uint8_t, uint8_t, uint8_t)</a> <a class="el" href="classArduboy2Core.html#a00b90ecdc25c5f31eab40ba4a906ba8b" title="Set the light output of the RGB LED. ">setRGBled()</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00423">423</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -732,7 +943,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>The contents of the display buffer in RAM are copied to the display and will appear on the screen.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a78dd8629716412b30a4df9d012921a78" title="Copy the contents of the display buffer to the display. The display buffer can optionally be cleared...">display(bool)</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00871">871</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00963">963</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -761,13 +972,75 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>Using <code>display(CLEAR_BUFFER)</code> is faster and produces less code than calling <code><a class="el" href="classArduboy2Base.html#aff2f9bc358bf3090cf4ffa3bd3a59fd6" title="Copy the contents of the display buffer to the display. ">display()</a></code> followed by <code><a class="el" href="classArduboy2Base.html#a4eac9cc4d32476c3b57bb347e816bae8" title="Clear the display buffer. ">clear()</a></code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#aff2f9bc358bf3090cf4ffa3bd3a59fd6" title="Copy the contents of the display buffer to the display. ">display()</a> <a class="el" href="classArduboy2Base.html#a4eac9cc4d32476c3b57bb347e816bae8" title="Clear the display buffer. ">clear()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00876">876</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00968">968</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8545a227303d22a039f22a9500828ab8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Core::displayOff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Turn the display off. </p>
+<p>The display will clear and be put into a low power mode. This can be used to extend battery life when a game is paused or when a sketch doesn't require anything to be displayed for a relatively long period of time.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#aeb51abef6c0eb7a1bbf164b0bf438c1c" title="Turn the display on. ">displayOn()</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00278">278</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb51abef6c0eb7a1bbf164b0bf438c1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Core::displayOn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Turn the display on. </p>
+<p>Used to power up and reinitialize the display after calling <code><a class="el" href="classArduboy2Core.html#a8545a227303d22a039f22a9500828ab8" title="Turn the display off. ">displayOff()</a></code>.</p>
+<dl class="section note"><dt>Note</dt><dd>The previous call to <code><a class="el" href="classArduboy2Core.html#a8545a227303d22a039f22a9500828ab8" title="Turn the display off. ">displayOff()</a></code> will have caused the display's buffer contents to be lost. The display will have to be re-painted, which is usually done by calling <code>display()</code>.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a8545a227303d22a039f22a9500828ab8" title="Turn the display off. ">displayOff()</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00289">289</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a2d57427a8e6bc9d5f5b5630e4fb07c3c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Arduboy2Base::drawBitmap </td>
@@ -811,6 +1084,11 @@ RGB_ON     RGB_ON     RGB_ON     White
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Draw a bitmap from an array in program memory. </p>
@@ -829,7 +1107,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>Each byte in the array specifies a vertical column of 8 pixels, with the least significant bit at the top.</p>
 <p>The array must be located in program memory by using the PROGMEM modifier. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00677">677</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00769">769</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -880,13 +1158,16 @@ RGB_ON     RGB_ON     RGB_ON     White
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00245">245</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00337">337</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ab86319e224e1a902d231ce4a9e10ad22"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Arduboy2Base::drawCompressed </td>
@@ -918,6 +1199,11 @@ RGB_ON     RGB_ON     RGB_ON     White
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Draw a bitmap from an array of compressed data. </p>
@@ -926,7 +1212,7 @@ RGB_ON     RGB_ON     RGB_ON     White
     <tr><td class="paramname">sx</td><td>The X coordinate of the top left pixel affected by the bitmap. </td></tr>
     <tr><td class="paramname">sy</td><td>The Y coordinate of the top left pixel affected by the bitmap. </td></tr>
     <tr><td class="paramname">bitmap</td><td>A pointer to the compressed bitmap array in program memory. </td></tr>
-    <tr><td class="paramname">color</td><td>The color of pixels for bits set to 1 in the bitmap.</td></tr>
+    <tr><td class="paramname">color</td><td>The color of pixels for bits set to 1 in the bitmap. (optional; defaults to WHITE).</td></tr>
   </table>
   </dd>
 </dl>
@@ -934,7 +1220,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>Bits set to 1 in the provided bitmap array will have their corresponding pixel set to the specified color. For bits set to 0 in the array, the corresponding pixel will be left unchanged.</p>
 <p>The array must be located in program memory by using the PROGMEM modifier. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00766">766</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00858">858</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1271,7 @@ RGB_ON     RGB_ON     RGB_ON     White
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00441">441</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00533">533</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1322,7 @@ RGB_ON     RGB_ON     RGB_ON     White
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00431">431</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00523">523</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1379,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 </dl>
 <p>Draw a line from the start point to the end point using Bresenham's algorithm. The start and end points can be at any location with respect to the other. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00371">371</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00463">463</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1138,7 +1424,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 </dl>
 <p>The single pixel specified location in the display buffer is set to the specified color. The values WHITE or BLACK can be used for the color. If the <code>color</code> parameter isn't included, the pixel will be set to WHITE. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00218">218</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00283">283</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1196,7 +1482,7 @@ RGB_ON     RGB_ON     RGB_ON     White
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00422">422</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00514">514</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1547,7 @@ RGB_ON     RGB_ON     RGB_ON     White
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00540">540</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00632">632</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1616,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>The array must be located in program memory by using the PROGMEM modifier.</p>
 <dl class="section note"><dt>Note</dt><dd>This function requires a lot of additional CPU power and will draw images slower than <code><a class="el" href="classArduboy2Base.html#a2d57427a8e6bc9d5f5b5630e4fb07c3c" title="Draw a bitmap from an array in program memory. ">drawBitmap()</a></code>, which uses bitmaps that are stored in a format that allows them to be directly written to the screen. It is recommended you use <code><a class="el" href="classArduboy2Base.html#a2d57427a8e6bc9d5f5b5630e4fb07c3c" title="Draw a bitmap from an array in program memory. ">drawBitmap()</a></code> when possible. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00723">723</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00815">815</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1399,7 +1685,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 </dl>
 <p>A triangle is drawn by specifying each of the three corner locations. The corners can be at any position with respect to the others. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00566">566</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00658">658</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1715,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>For example, if you wanted to fire a shot every 5 frames while the A button is being held down:</p>
 <div class="fragment"><div class="line"><span class="keywordflow">if</span> (arduboy.everyXframes(5)) {</div><div class="line">  <span class="keywordflow">if</span> arduboy.<a class="code" href="classArduboy2Base.html#a1a294744f7886588b6864f1df75a91ba">pressed</a>(<a class="code" href="Arduboy2Core_8h.html#a5ec59d5e4f6bfacfdf3aa6e7ed5c0373">A_BUTTON</a>) {</div><div class="line">    fireShot();</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d" title="Set the frame rate used by the frame control functions. ">setFrameRate()</a> <a class="el" href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d" title="Indicate that it&#39;s time to render the next frame. ">nextFrame()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00140">140</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00193">193</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1480,7 +1766,7 @@ RGB_ON     RGB_ON     RGB_ON     White
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00327">327</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00419">419</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1538,7 +1824,7 @@ RGB_ON     RGB_ON     RGB_ON     White
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00492">492</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00584">584</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1603,7 +1889,7 @@ RGB_ON     RGB_ON     RGB_ON     White
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00555">555</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00647">647</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1629,7 +1915,7 @@ RGB_ON     RGB_ON     RGB_ON     White
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00501">501</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00593">593</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1698,7 +1984,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 </dl>
 <p>A triangle is drawn by specifying each of the three corner locations. The corners can be at any position with respect to the others. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00574">574</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00666">666</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1715,12 +2001,15 @@ RGB_ON     RGB_ON     RGB_ON     White
       </table>
 </div><div class="memdoc">
 
-<p>Flashlight mode turns the RGB LED and display fully on. </p>
-<p>Checks if the UP button is pressed and if so turns the RGB LED and all display pixels fully on. Pressing the DOWN button will exit flashlight mode.</p>
+<p>Turn the RGB LED and display fully on to act as a small flashlight/torch. </p>
+<p>Checks if the UP button is pressed and if so turns the RGB LED and all display pixels fully on. If the UP button is detected, this function does not exit. The Arduboy must be restarted after flashlight mode is used.</p>
 <p>This function is called by <code><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a></code> and can be called by a sketch after <code><a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a></code>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><p class="startdd">This function also contains code to address a problem with uploading a new sketch, for sketches that interfere with the bootloader "magic number". This problem occurs with certain sketches that use large amounts of RAM. Being in flashlight mode when uploading a new sketch can fix this problem.</p>
+<p class="enddd">Therefore, for sketches that potentially could cause this problem, and use <code><a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a></code> instead of <code><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a></code>, it is recommended that a call to <code><a class="el" href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a" title="Turn the RGB LED and display fully on to act as a small flashlight/torch. ">flashlight()</a></code> be included after calling <code><a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a></code>. If program space is limited, <code><a class="el" href="classArduboy2Core.html#a16d782c9cf56f2417fd7deacaa27a03b" title="Allow upload when the bootloader &quot;magic number&quot; could be corrupted. ">safeMode()</a></code> can be used instead of <code><a class="el" href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a" title="Turn the RGB LED and display fully on to act as a small flashlight/torch. ">flashlight()</a></code>. </p>
+</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> <a class="el" href="classArduboy2Core.html#a16d782c9cf56f2417fd7deacaa27a03b" title="Allow upload when the bootloader &quot;magic number&quot; could be corrupted. ">safeMode()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00055">55</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00060">60</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1757,7 +2046,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>Once in horizontal flip mode, it will remain this way until normal horizontal mode is set by calling this function with a value of <code>false</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a8125a3776ac990b56f7225c9419a527d" title="Flip the display vertically or set it back to normal. ">flipVertical()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00322">322</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00387">387</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1794,7 +2083,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>Once in vertical flip mode, it will remain this way until normal vertical mode is set by calling this function with a value of <code>false</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a40fc996602d64545d81ea857e74b23f7" title="Flip the display horizontally or set it back to normal. ">flipHorizontal()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00316">316</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00381">381</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1817,7 +2106,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <dl class="section note"><dt>Note</dt><dd>The display buffer array, <code>sBuffer</code>, is public. A sketch can access it directly. Doing so may be more efficient than accessing it via the pointer returned by <code><a class="el" href="classArduboy2Base.html#aacd29034dd9dbd15e0906924c9e3e379" title="Get a pointer to the display buffer in RAM. ">getBuffer()</a></code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a001a0e77a58306f871fe47135fabb872" title="The display buffer array in RAM. ">sBuffer</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00881">881</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00973">973</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1855,7 +2144,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>WHITE if the pixel is on or BLACK if the pixel is off. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00238">238</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00330">330</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1884,7 +2173,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <dl class="section return"><dt>Returns</dt><dd>The height of the display in pixels.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>In most cases, the defined value <code>HEIGHT</code> would be better to use instead of this function. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00231">231</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00296">296</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1912,7 +2201,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>Idle the CPU to save power. </p>
 <p>This puts the CPU in <em>idle</em> sleep mode. You should call this as often as you can for the best power savings. The timer 0 overflow interrupt will wake up the chip every 1ms, so even at 60 FPS a well written app should be able to sleep maybe half the time in between rendering it's own frames. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00210">210</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00262">262</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1933,7 +2222,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>The Arduino random number generator is seeded with a random value derrived from entropy from the temperature, voltage reading, and microseconds since boot.</p>
 <p>This method is still most effective when called after a semi-random time, such as after a user hits a button to start a game or other semi-random event. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00189">189</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00255">255</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1969,7 +2258,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>Calling this function with a value of <code>true</code> will set the display to inverted mode. A pixel with a value of 0 will be on and a pixel set to 1 will be off.</p>
 <p>Once in inverted mode, the display will remain this way until it is set back to non-inverted mode by calling this function with <code>false</code>. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00303">303</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00368">368</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -2000,7 +2289,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>This function should only be used to test a single button.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a2f275c7d4a3438f7be543a02eb9a7d00" title="Poll the buttons and track their state over time. ">pollButtons()</a> <a class="el" href="classArduboy2Base.html#a605ac84d7efd4a8f52342c97a68f951f" title="Check if a button has just been released. ">justReleased()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00902">902</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00994">994</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2032,7 +2321,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <dl class="section note"><dt>Note</dt><dd>There aren't many cases where this function would be needed. Wanting to know if a button has been released, without knowing when it was pressed, is uncommon.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a2f275c7d4a3438f7be543a02eb9a7d00" title="Poll the buttons and track their state over time. ">pollButtons()</a> <a class="el" href="classArduboy2Base.html#acab90d5bfbcb9a65841cd9f812dbbf97" title="Check if a button has just been pressed. ">justPressed()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00907">907</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00999">999</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2066,9 +2355,9 @@ RGB_ON     RGB_ON     RGB_ON     White
 <li><a href="http://www.buydisplay.com/download/manual/ER-OLED013-1_Series_Datasheet.pdf">http://www.buydisplay.com/download/manual/ER-OLED013-1_Series_Datasheet.pdf</a></li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>This is a low level function that is not intended for general use in a sketch. It has been made public and documented for use by derived classes.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#ae08f6a422811075fad1faa3c66b09f19" title="Send a single command byte to the display. ">sendLCDCommand()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a2308c4b4a919d85f26d9e76f4e30e6ea" title="Put the display into data mode. ">LCDDataMode()</a> <a class="el" href="classArduboy2Core.html#ae08f6a422811075fad1faa3c66b09f19" title="Send a single command byte to the display. ">sendLCDCommand()</a> <a class="el" href="classArduboy2Core.html#afe19d50fc0b9c845369caf41fef590c9" title="Transfer a byte to the display. ">SPItransfer()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00190">190</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00218">218</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -2095,9 +2384,10 @@ RGB_ON     RGB_ON     RGB_ON     White
 
 <p>Put the display into data mode. </p>
 <p>When placed in data mode, data that is sent to the display will be considered as data to be displayed.</p>
-<dl class="section note"><dt>Note</dt><dd>This is a low level function that is not intended for general use in a sketch. It has been made public and documented for use by derived classes. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is a low level function that is not intended for general use in a sketch. It has been made public and documented for use by derived classes.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a65dd968eff178df135150cdecef9a7ba" title="Put the display into command mode. ">LCDCommandMode()</a> <a class="el" href="classArduboy2Core.html#afe19d50fc0b9c845369caf41fef590c9" title="Transfer a byte to the display. ">SPItransfer()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00184">184</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00213">213</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -2120,7 +2410,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>This function will normally be called at the start of the rendering loop which would wait for <code>true</code> to be returned before rendering and displaying the next frame.</p>
 <p>example: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> loop() {</div><div class="line">  <span class="keywordflow">if</span> (!arduboy.<a class="code" href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d">nextFrame</a>()) {</div><div class="line">    <span class="keywordflow">return</span>; <span class="comment">// go back to the start of the loop</span></div><div class="line">  }</div><div class="line">  <span class="comment">// render and display the next frame</span></div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d" title="Set the frame rate used by the frame control functions. ">setFrameRate()</a> <a class="el" href="classArduboy2Base.html#a45c6a2b014749458b68f4866b274e033" title="Indicate that it&#39;s time to render the next frame, and visually indicate if the code is running slower...">nextFrameDEV()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00145">145</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00198">198</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2144,7 +2434,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <dl class="section note"><dt>Note</dt><dd>Once a sketch is ready for release, it would be expected that <code><a class="el" href="classArduboy2Base.html#a45c6a2b014749458b68f4866b274e033" title="Indicate that it&#39;s time to render the next frame, and visually indicate if the code is running slower...">nextFrameDEV()</a></code> calls be restored to <code><a class="el" href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d" title="Indicate that it&#39;s time to render the next frame. ">nextFrame()</a></code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d" title="Indicate that it&#39;s time to render the next frame. ">nextFrame()</a> <a class="el" href="classArduboy2Base.html#a43a428651c213e10c2201c29dcbf384d" title="Return the load on the CPU as a percentage. ">cpuLoad()</a> <a class="el" href="classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d" title="Set the frame rate used by the frame control functions. ">setFrameRate()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00172">172</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00237">237</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2174,7 +2464,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>Example: <code>if (notPressed(UP_BUTTON))</code></p>
 <dl class="section note"><dt>Note</dt><dd>This function does not perform any button debouncing. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00891">891</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00983">983</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2222,7 +2512,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 . . . . . . . .                  X . X . . . . .
 . . . . . . . . (end of page 1)  X . X . . . . . (end of page 1)
 . . . . . . . . (page 2)         . . . . . . . . (page 2)</pre> 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00236">236</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00301">301</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -2258,7 +2548,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>The contents of the specified array in program memory is written to the display. Each byte in the array represents a vertical column of 8 pixels with the least significant bit at the top. The bytes are written starting at the top left, progressing horizontally and wrapping at the end of each row, to the bottom right. The size of the array must exactly match the number of pixels in the entire display.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#ae1774e369d406def93242881abd43bb3" title="Paint 8 pixels vertically to the display. ">paint8Pixels()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00241">241</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00306">306</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -2306,7 +2596,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>If parameter <code>clear</code> is set to <code>true</code> the RAM array will be cleared to zeros after its contents are written to the display.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#ae1774e369d406def93242881abd43bb3" title="Paint 8 pixels vertically to the display. ">paint8Pixels()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00251">251</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00316">316</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -2330,7 +2620,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>example: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> loop() {</div><div class="line">  <span class="keywordflow">if</span> (!arduboy.<a class="code" href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d">nextFrame</a>()) {</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">  }</div><div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a2f275c7d4a3438f7be543a02eb9a7d00">pollButtons</a>();</div><div class="line"></div><div class="line">  <span class="comment">// use justPressed() as necessary to determine if a button was just pressed</span></div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>As long as the elapsed time between calls to this function is long enough, buttons will be naturally debounced. Calling it once per frame at a frame rate of 60 or lower (or possibly somewhat higher), should be sufficient.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#acab90d5bfbcb9a65841cd9f812dbbf97" title="Check if a button has just been pressed. ">justPressed()</a> <a class="el" href="classArduboy2Base.html#a605ac84d7efd4a8f52342c97a68f951f" title="Check if a button has just been released. ">justReleased()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00896">896</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00988">988</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2360,7 +2650,29 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>Example: <code>if (pressed(LEFT_BUTTON + A_BUTTON))</code></p>
 <dl class="section note"><dt>Note</dt><dd>This function does not perform any button debouncing. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00886">886</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00978">978</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02f80c41f082ae8dd5f2462d1ead199a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Arduboy2Base::readShowUnitNameFlag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the "Show Unit Name" flag in system EEPROM. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the flag is set to indicate that the unit name should be displayed. <code>false</code> if the flag is set to not display the unit name.</dd></dl>
+<p>The "Show Unit Name" flag is used to determine whether the system unit name is to be displayed at the end of the boot logo sequence. This function returns the value of this flag.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a121a9276b05c2d206fddb932f2ca98da" title="Write the &quot;Show Unit Name&quot; flag in system EEPROM. ">writeShowUnitNameFlag()</a> <a class="el" href="classArduboy2Base.html#a8d63d2fc0f45ab6af82616bbe6422785" title="Write a unit name to system EEPROM. ">writeUnitName()</a> <a class="el" href="classArduboy2Base.html#a4c1882ecdacf268c4348ff1e12cf346e" title="Read the unit name from system EEPROM. ">readUnitName()</a> <a class="el" href="classArduboy2.html#a9687ed92d84cb1055c83cd479aa7a4e5" title="Show the unit name at the bottom of the boot logo screen. ">Arduboy2::bootLogoExtra()</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l01066">1066</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2382,7 +2694,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>This function reads the unit ID that has been set in system EEPROM. The ID can be any value. It is intended to allow different units to be uniquely identified.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a1947d7386a7800643d73743f8ce00f41" title="Write a unit ID to system EEPROM. ">writeUnitID()</a> <a class="el" href="classArduboy2Base.html#a4c1882ecdacf268c4348ff1e12cf346e" title="Read the unit name from system EEPROM. ">readUnitName()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00926">926</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l01018">1018</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2413,7 +2725,38 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <dl class="section note"><dt>Note</dt><dd>Sketches can use the defined value <code>ARDUBOY_UNIT_NAME_LEN</code> instead of hard coding a 6 when working with the unit name. For example, to allocate a buffer and read the unit name into it: <div class="fragment"><div class="line"><span class="comment">// Buffer for maximum name length plus the terminator</span></div><div class="line"><span class="keywordtype">char</span> unitName[<a class="code" href="Arduboy2_8h.html#a4adb7fae020162ca57752c3197ab1d54">ARDUBOY_UNIT_NAME_LEN</a> + 1];</div><div class="line"></div><div class="line"><span class="comment">// The actual name length</span></div><div class="line">byte unitNameLength;</div><div class="line"></div><div class="line">unitNameLength = arduboy.<a class="code" href="classArduboy2Base.html#a4c1882ecdacf268c4348ff1e12cf346e">readUnitName</a>(unitName);</div></div><!-- fragment --></dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a8d63d2fc0f45ab6af82616bbe6422785" title="Write a unit name to system EEPROM. ">writeUnitName()</a> <a class="el" href="classArduboy2Base.html#a29a141cc127fb9abc8de096ae3a93aa0" title="Read the unit ID from system EEPROM. ">readUnitID()</a> <a class="el" href="classArduboy2.html#a9687ed92d84cb1055c83cd479aa7a4e5" title="Show the unit name at the bottom of the boot logo screen. ">Arduboy2::bootLogoExtra()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00938">938</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l01030">1030</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16d782c9cf56f2417fd7deacaa27a03b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Core::safeMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allow upload when the bootloader "magic number" could be corrupted. </p>
+<p>If the UP button is held when this function is entered, the RGB LED will be lit and timer 0 will be disabled, then the sketch will remain in a tight loop. This is to address a problem with uploading a new sketch, for sketches that interfere with the bootloader "magic number". The problem occurs with certain sketches that use large amounts of RAM.</p>
+<p>This function should be called after <code><a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a></code> in sketches that potentially could cause the problem.</p>
+<p>It is intended to replace the <code>flashlight()</code> function when more program space is required. If possible, it is more desirable to use <code>flashlight()</code>, so that the actual flashlight feature isn't lost.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a" title="Turn the RGB LED and display fully on to act as a small flashlight/torch. ">Arduboy2Base::flashlight()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00245">245</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -2449,7 +2792,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>The display will be set to command mode then the specified command byte will be sent. The display will then be set to data mode. Multi-byte commands can be sent by calling this function multiple times.</p>
 <dl class="section note"><dt>Note</dt><dd>Sending improper commands to the display can place it into invalid or unexpected states, possibly even causing physical damage. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00294">294</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00359">359</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -2478,7 +2821,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>Normally, the frame rate would be set to the desired value once, at the start of the game, but it can be changed at any time to alter the frame update rate.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d" title="Indicate that it&#39;s time to render the next frame. ">nextFrame()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00135">135</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00188">188</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2532,7 +2875,43 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <dl class="section note"><dt>Note</dt><dd>Many of the Kickstarter Arduboys were accidentally shipped with the RGB LED installed incorrectly. For these units, the green LED cannot be lit. As long as the green led is set to off, setting the red LED will actually control the blue LED and setting the blue LED will actually control the red LED. If the green LED is turned fully on, none of the LEDs will light. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a8bb32aa7c24306aa2c01517648f9a1cf" title="Set the RGB LEDs digitally, to either fully on or fully off. ">digitalWriteRGB()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00329">329</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00394">394</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe19d50fc0b9c845369caf41fef590c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Core::SPItransfer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfer a byte to the display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The byte to be sent to the display.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Transfer one byte to the display over the SPI port and wait for the transfer to complete. The byte will either be interpreted as a command or as data to be placed on the screen, depending on the command/data mode.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a2308c4b4a919d85f26d9e76f4e30e6ea" title="Put the display into data mode. ">LCDDataMode()</a> <a class="el" href="classArduboy2Core.html#a65dd968eff178df135150cdecef9a7ba" title="Put the display into command mode. ">LCDCommandMode()</a> <a class="el" href="classArduboy2Core.html#ae08f6a422811075fad1faa3c66b09f19" title="Send a single command byte to the display. ">sendLCDCommand()</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00232">232</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -2558,7 +2937,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 </ul>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">begin()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00072">72</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00079">79</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2587,7 +2966,35 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <dl class="section return"><dt>Returns</dt><dd>The width of the display in pixels.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>In most cases, the defined value <code>WIDTH</code> would be better to use instead of this function. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00229">229</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00294">294</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a121a9276b05c2d206fddb932f2ca98da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arduboy2Base::writeShowUnitNameFlag </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the "Show Unit Name" flag in system EEPROM. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>If <code>true</code> the flag is set to indicate that the unit name should be displayed. If <code>false</code> the flag is set to not display the unit name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The "Show Unit Name" flag is used to determine whether the system unit name is to be displayed at the end of the boot logo sequence. This function allows the flag to be saved with the desired value.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a02f80c41f082ae8dd5f2462d1ead199a" title="Read the &quot;Show Unit Name&quot; flag in system EEPROM. ">readShowUnitNameFlag()</a> <a class="el" href="classArduboy2Base.html#a8d63d2fc0f45ab6af82616bbe6422785" title="Write a unit name to system EEPROM. ">writeUnitName()</a> <a class="el" href="classArduboy2Base.html#a4c1882ecdacf268c4348ff1e12cf346e" title="Read the unit name from system EEPROM. ">readUnitName()</a> <a class="el" href="classArduboy2.html#a9687ed92d84cb1055c83cd479aa7a4e5" title="Show the unit name at the bottom of the boot logo screen. ">Arduboy2::bootLogoExtra()</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l01071">1071</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2615,7 +3022,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>This function writes a unit ID to a reserved location in system EEPROM. The ID can be any value. It is intended to allow different units to be uniquely identified.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a29a141cc127fb9abc8de096ae3a93aa0" title="Read the unit ID from system EEPROM. ">readUnitID()</a> <a class="el" href="classArduboy2Base.html#a8d63d2fc0f45ab6af82616bbe6422785" title="Write a unit name to system EEPROM. ">writeUnitName()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00932">932</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l01024">1024</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2645,7 +3052,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <dl class="section note"><dt>Note</dt><dd>Sketches can use the defined value <code>ARDUBOY_UNIT_NAME_LEN</code> instead of hard coding a 6 when working with the unit name.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a4c1882ecdacf268c4348ff1e12cf346e" title="Read the unit name from system EEPROM. ">readUnitName()</a> <a class="el" href="classArduboy2Base.html#a1947d7386a7800643d73743f8ce00f41" title="Write a unit ID to system EEPROM. ">writeUnitID()</a> <a class="el" href="classArduboy2.html#a9687ed92d84cb1055c83cd479aa7a4e5" title="Show the unit name at the bottom of the boot logo screen. ">Arduboy2::bootLogoExtra()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00958">958</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l01050">1050</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
 
 </div>
 </div>
@@ -2664,7 +3071,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>This object is created to eliminate the need for a sketch to create an <a class="el" href="classArduboy2Audio.html" title="Provide speaker and sound control. ">Arduboy2Audio</a> class object itself.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Audio.html" title="Provide speaker and sound control. ">Arduboy2Audio</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00177">177</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00176">176</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -2684,7 +3091,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>example: </p><div class="fragment"><div class="line"><span class="comment">// move for 10 frames when right button is pressed, if not already moving</span></div><div class="line"><span class="keywordflow">if</span> (!moving) {</div><div class="line">  <span class="keywordflow">if</span> (arduboy.<a class="code" href="classArduboy2Base.html#acab90d5bfbcb9a65841cd9f812dbbf97">justPressed</a>(<a class="code" href="Arduboy2Core_8h.html#aeb17351958162535ab6af2cd6b030955">RIGHT_BUTTON</a>)) {</div><div class="line">    endMoving = arduboy.<a class="code" href="classArduboy2Base.html#a281ecc7c3df686e3e87584794442cda9">frameCount</a> + 10;</div><div class="line">    moving = <span class="keyword">true</span>;</div><div class="line">  }</div><div class="line">} <span class="keywordflow">else</span> {</div><div class="line">  movePlayer();</div><div class="line">  <span class="keywordflow">if</span> (arduboy.<a class="code" href="classArduboy2Base.html#a281ecc7c3df686e3e87584794442cda9">frameCount</a> == endMoving) {</div><div class="line">    moving = <span class="keyword">false</span>;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>This counter could also be used to determine the number of frames that have elapsed between events but the possibility of the counter wrapping would have to be accounted for.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d" title="Indicate that it&#39;s time to render the next frame. ">nextFrame()</a> <a class="el" href="classArduboy2Base.html#aba61b473683a1f61827648568fbfb1e5" title="Indicate if the specified number of frames has elapsed. ">everyXFrames()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00981">981</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l01091">1091</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -2710,7 +3117,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>The display buffer (also known as the screen buffer) contains an image bitmap of the desired contents of the display, which is written to the display using the <code><a class="el" href="classArduboy2Base.html#aff2f9bc358bf3090cf4ffa3bd3a59fd6" title="Copy the contents of the display buffer to the display. ">display()</a></code> function. The drawing functions of this library manipulate the contents of the display buffer. A sketch can also access the display buffer directly.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#aacd29034dd9dbd15e0906924c9e3e379" title="Get a pointer to the display buffer in RAM. ">getBuffer()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00995">995</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l01105">1105</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -2724,7 +3131,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classArduboy2Base.html">Arduboy2Base</a></li>
-    <li class="footer">Generated on Wed Mar 22 2017 18:26:43 for Arduboy2 Library by
+    <li class="footer">Generated on Wed Apr 26 2017 10:28:54 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -7,5 +7,5 @@ var annotated_dup =
     [ "Point", "structPoint.html", "structPoint" ],
     [ "Print", "classPrint.html", null ],
     [ "Rect", "structRect.html", "structRect" ],
-    [ "Sprites", "classSprites.html", "classSprites" ]
+    [ "Sprites", "classSprites.html", null ]
 ];

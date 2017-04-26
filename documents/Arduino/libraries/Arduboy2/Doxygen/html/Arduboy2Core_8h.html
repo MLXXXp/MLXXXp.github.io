@@ -115,7 +115,6 @@ $(document).ready(function(){initNavTree('Arduboy2Core_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
 <code>#include &lt;avr/power.h&gt;</code><br />
-<code>#include &lt;SPI.h&gt;</code><br />
 <code>#include &lt;avr/sleep.h&gt;</code><br />
 <code>#include &lt;limits.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -163,10 +162,6 @@ Macros</h2></td></tr>
 <tr class="separator:a01649d652fa50957c6ef3c32b1238038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c7fcbe209a1c236fd1b8e35bd8b55a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Arduboy2Core_8h.html#a41c7fcbe209a1c236fd1b8e35bd8b55a">BLUE_LED</a>&#160;&#160;&#160;9</td></tr>
 <tr class="separator:a41c7fcbe209a1c236fd1b8e35bd8b55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bf8434390a15fe10995336ad7affc9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Arduboy2Core_8h.html#a8bf8434390a15fe10995336ad7affc9d">TX_LED</a>&#160;&#160;&#160;30</td></tr>
-<tr class="separator:a8bf8434390a15fe10995336ad7affc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac99c686438cf1684647d49655e57ac62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Arduboy2Core_8h.html#ac99c686438cf1684647d49655e57ac62">RX_LED</a>&#160;&#160;&#160;17</td></tr>
-<tr class="separator:ac99c686438cf1684647d49655e57ac62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbc8382ae4ea521f03c119a14478b759"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Arduboy2Core_8h.html#abbc8382ae4ea521f03c119a14478b759">LEFT_BUTTON</a>&#160;&#160;&#160;_BV(5)</td></tr>
 <tr class="separator:abbc8382ae4ea521f03c119a14478b759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb17351958162535ab6af2cd6b030955"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Arduboy2Core_8h.html#aeb17351958162535ab6af2cd6b030955">RIGHT_BUTTON</a>&#160;&#160;&#160;_BV(6)</td></tr>
@@ -204,7 +199,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The A button value for functions requiring a bitmask </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00069">69</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00078">78</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -219,7 +214,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The B button value for functions requiring a bitmask </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00070">70</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00079">79</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -234,7 +229,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The pin number for the blue color in the RGB LED. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00052">52</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00061">61</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +244,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The Down button value for functions requiring a bitmask </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00068">68</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00077">77</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +259,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The pin number for the greem color in the RGB LED. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00051">51</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00060">60</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -279,7 +274,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The height of the display in pixels </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00137">137</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00221">221</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +289,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The Left button value for functions requiring a bitmask </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00065">65</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00074">74</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +304,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The pin number of the first lead of the speaker </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00072">72</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00105">105</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -324,7 +319,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The pin number of the second lead of the speaker </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00073">73</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00106">106</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +334,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The pin number for the red color in the RGB LED. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00050">50</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00059">59</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -354,7 +349,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>For digitially setting an RGB LED off using digitalWriteRGB() </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00042">42</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00036">36</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +364,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>For digitially setting an RGB LED on using digitalWriteRGB() </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00041">41</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00035">35</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -384,37 +379,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The Right button value for functions requiring a bitmask </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00066">66</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac99c686438cf1684647d49655e57ac62"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RX_LED&#160;&#160;&#160;17</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The pin number for the receive indicator LED. </p>
-
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00054">54</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8bf8434390a15fe10995336ad7affc9d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TX_LED&#160;&#160;&#160;30</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The pin number for the transmit indicator LED. </p>
-
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00053">53</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00075">75</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +394,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The Up button value for functions requiring a bitmask </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00067">67</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00076">76</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +409,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The width of the display in pixels </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00136">136</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00220">220</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 
 </div>
 </div>
@@ -454,7 +419,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Arduboy2Core_8h.html">Arduboy2Core.h</a></li>
-    <li class="footer">Generated on Wed Mar 22 2017 18:26:43 for Arduboy2 Library by
+    <li class="footer">Generated on Wed Apr 26 2017 10:28:54 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

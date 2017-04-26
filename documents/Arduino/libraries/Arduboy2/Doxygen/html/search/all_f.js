@@ -1,6 +1,7 @@
 var searchData=
 [
   ['software_20license_20agreements',['Software License Agreements',['../licenses.html',1,'']]],
+  ['safemode',['safeMode',['../classArduboy2Core.html#a16d782c9cf56f2417fd7deacaa27a03b',1,'Arduboy2Core']]],
   ['saveonoff',['saveOnOff',['../classArduboy2Audio.html#ad6c5d1f7cd4da7e2bda606586ae38e31',1,'Arduboy2Audio']]],
   ['sbuffer',['sBuffer',['../classArduboy2Base.html#a001a0e77a58306f871fe47135fabb872',1,'Arduboy2Base']]],
   ['sendlcdcommand',['sendLCDCommand',['../classArduboy2Core.html#ae08f6a422811075fad1faa3c66b09f19',1,'Arduboy2Core']]],
@@ -11,6 +12,7 @@ var searchData=
   ['settextcolor',['setTextColor',['../classArduboy2.html#a7a57fc5d34bb080ac03052c03fc1790d',1,'Arduboy2']]],
   ['settextsize',['setTextSize',['../classArduboy2.html#a810d65a88097a98ddf25ed1cfee271e0',1,'Arduboy2']]],
   ['settextwrap',['setTextWrap',['../classArduboy2.html#a860b6c048eadac45ae8e4901ad254b6b',1,'Arduboy2']]],
+  ['spitransfer',['SPItransfer',['../classArduboy2Core.html#afe19d50fc0b9c845369caf41fef590c9',1,'Arduboy2Core']]],
   ['sprites',['Sprites',['../classSprites.html',1,'']]],
   ['sprites_2ecpp',['Sprites.cpp',['../Sprites_8cpp.html',1,'']]],
   ['sprites_2eh',['Sprites.h',['../Sprites_8h.html',1,'']]],

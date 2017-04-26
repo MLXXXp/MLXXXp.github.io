@@ -1,5 +1,5 @@
 <map id="src/Sprites.h" name="src/Sprites.h">
-<area shape="rect" id="node2" href="$Arduboy2_8h.html" title="The Arduboy2Base and Arduboy2 classes and support objects and definitions. " alt="" coords="397,80,485,107"/>
-<area shape="rect" id="node5" href="$Arduboy2Core_8h.html" title="The Arduboy2Core class for Arduboy hardware initilization and control. " alt="" coords="184,155,300,181"/>
-<area shape="rect" id="node11" href="$Arduboy2Audio_8h.html" title="The Arduboy2Audio class for speaker and sound control. " alt="" coords="429,155,551,181"/>
+<area shape="rect" id="node2" href="$Arduboy2_8h.html" title="The Arduboy2Base and Arduboy2 classes and support objects and definitions. " alt="" coords="320,80,408,107"/>
+<area shape="rect" id="node5" href="$Arduboy2Core_8h.html" title="The Arduboy2Core class for Arduboy hardware initilization and control. " alt="" coords="110,155,226,181"/>
+<area shape="rect" id="node10" href="$Arduboy2Audio_8h.html" title="The Arduboy2Audio class for speaker and sound control. " alt="" coords="353,155,474,181"/>
 </map>

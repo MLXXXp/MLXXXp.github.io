@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['up_5fbutton',['UP_BUTTON',['../Arduboy2Core_8h.html#ae6ab1863af621c09d3590d290a06eee4',1,'Arduboy2Core.h']]]
+  ['white',['WHITE',['../Arduboy2_8h.html#a87b537f5fa5c109d3c05c13d6b18f382',1,'Arduboy2.h']]],
+  ['width',['WIDTH',['../Arduboy2Core_8h.html#a241aeeb764887ae5e3de58b98f04b16d',1,'Arduboy2Core.h']]]
 ];

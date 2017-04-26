@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tx_5fled',['TX_LED',['../Arduboy2Core_8h.html#a8bf8434390a15fe10995336ad7affc9d',1,'Arduboy2Core.h']]]
+  ['up_5fbutton',['UP_BUTTON',['../Arduboy2Core_8h.html#ae6ab1863af621c09d3590d290a06eee4',1,'Arduboy2Core.h']]]
 ];
