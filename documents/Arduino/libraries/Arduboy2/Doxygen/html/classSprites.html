@@ -151,10 +151,16 @@ Static Public Member Functions</h2></td></tr>
 <p>A sprite or mask array contains one or more "frames". Each frame is intended to show whatever the sprite represents in a different position, such as the various poses for a running or jumping character. By specifying a different frame each time the sprite is drawn, it can be animated.</p>
 <p>Each image array begins with values for the width and height of the sprite, in pixels. The width can be any value. The height must be a multiple of 8 pixels, but with proper masking, a sprite of any height can be created.</p>
 <p>For a separate mask array, as is used with <code><a class="el" href="classSprites.html#a6f52e84e29b6180797a5ab53ccab948d" title="Draw a sprite using a separate image and mask array. ">drawExternalMask()</a></code>, the width and height are not included but must contain data of the same dimensions as the corresponding image array.</p>
-<p>Following the width and height values for an image array, or the from the beginning of a separate mask array, the array contains the image and/or mask data for each frame. Each byte represents a vertical column of 8 pixels with the least significant bit (bit 0) at the top. The bytes are drawn as 8 pixel high rows from left to right, top to bottom. When the end of a row is reached, as specified by the width value, the next byte in the array will be the start of the next row.</p>
-<p>Data for each frame after the first one immediately follows the previous frame. Frame numbers start at 0. </p>
+<p>Following the width and height values for an image array, or from the beginning of a separate mask array, the array contains the image and/or mask data for each frame. Each byte represents a vertical column of 8 pixels with the least significant bit (bit 0) at the top. The bytes are drawn as 8 pixel high rows from left to right, top to bottom. When the end of a row is reached, as specified by the width value, the next byte in the array will be the start of the next row.</p>
+<p>Data for each frame after the first one immediately follows the previous frame. Frame numbers start at 0.</p>
+<dl class="section note"><dt>Note</dt><dd><p class="startdd">A separate <code><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size...">SpritesB</a></code> class is available as an alternative to this class. The only difference is that the <code><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size...">SpritesB</a></code> class is optimized for small code size rather than for execution speed. One or the other can be used depending on whether size or speed is more important.</p>
+<p>Even if the speed is acceptable when using <code><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size...">SpritesB</a></code>, you should still try using <code><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a></code>. In some cases <code><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a></code> will produce less code than <code><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size...">SpritesB</a></code>, notably when only one of the functions is used.</p>
+<p>You can easily switch between using the <code><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a></code> class or the <code><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size...">SpritesB</a></code> class by using one or the other to create an object instance:</p>
+<div class="fragment"><div class="line"><a class="code" href="classSprites.html">Sprites</a> sprites;  <span class="comment">// Use this to optimize for execution speed</span></div><div class="line"><a class="code" href="classSpritesB.html">SpritesB</a> sprites; <span class="comment">// Use this to (likely) optimize for code size</span></div></div><!-- fragment --> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>In the example patterns given in each <a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps. ">Sprites</a> function description, a # character represents a bit set to 1 and a - character represents a bit set to 0. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size...">SpritesB</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Sprites_8h_source.html#l00053">53</a> of file <a class="el" href="Sprites_8h_source.html">Sprites.h</a>.</p>
+<p>Definition at line <a class="el" href="Sprites_8h_source.html#l00075">75</a> of file <a class="el" href="Sprites_8h_source.html">Sprites.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a361d7c2e4ce53e93ee71e8b11d72fef0"></a>
 <div class="memitem">
@@ -209,21 +215,21 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>The data from the specified frame in the array is used to erase a sprite. To "erase" a sprite, bits set to 1 in the frame will set the corresponding pixel in the buffer to 0. Frame bits set to 0 will remain unchanged in the buffer. </p><pre class="fragment">image  before  after
+<p>The data from the specified frame in the array is used to erase a sprite. To "erase" a sprite, bits set to 1 in the frame will set the corresponding pixel in the buffer to 0. Frame bits set to 0 will remain unchanged in the buffer. </p><pre class="fragment">image  before  after  (# = 1, - = 0)
 
-.....  .....   .....
-..O..  .....   .....
-OO.OO  .....   .....
-..O..  .....   .....
-.....  .....   .....
+-----  -----   -----
+--#--  -----   -----
+##-##  -----   -----
+--#--  -----   -----
+-----  -----   -----
 
 image  before  after
 
-.....  OOOOO   OOOOO
-..O..  OOOOO   OO.OO
-OO.OO  OOOOO   ..O..
-..O..  OOOOO   OO.OO
-.....  OOOOO   OOOOO</pre> 
+-----  #####   #####
+--#--  #####   ##-##
+##-##  #####   --#--
+--#--  #####   ##-##
+-----  #####   #####</pre> 
 <p>Definition at line <a class="el" href="Sprites_8cpp_source.html#l00020">20</a> of file <a class="el" href="Sprites_8cpp_source.html">Sprites.cpp</a>.</p>
 
 </div>
@@ -296,21 +302,21 @@ OO.OO  OOOOO   ..O..
   </dd>
 </dl>
 <p>An array containing the image frames, and another array containing corresponding mask frames, are used to draw a sprite.</p>
-<p>Bits set to 1 in the mask indicate that the pixel will be set to the value of the corresponding image bit. Bits set to 0 in the mask will be left unchanged. </p><pre class="fragment">image  mask   before  after
+<p>Bits set to 1 in the mask indicate that the pixel will be set to the value of the corresponding image bit. Bits set to 0 in the mask will be left unchanged. </p><pre class="fragment">image  mask   before  after  (# = 1, - = 0)
 
-.....  .OOO.  .....   .....
-..O..  OOOOO  .....   ..O..
-OO.OO  OO.OO  .....   OO.OO
-..O..  OOOOO  .....   ..O..
-.....  .OOO.  .....   .....
+-----  -###-  -----   -----
+--#--  #####  -----   --#--
+##-##  ##-##  -----   ##-##
+--#--  #####  -----   --#--
+-----  -###-  -----   -----
 
 image  mask   before  after
 
-.....  .OOO.  OOOOO   O...O
-..O..  OOOOO  OOOOO   ..O..
-OO.OO  OOOOO  OOOOO   OO.OO
-..O..  OOOOO  OOOOO   ..O..
-.....  .OOO.  OOOOO   O...O</pre> 
+-----  -###-  #####   #---#
+--#--  #####  #####   --#--
+##-##  #####  #####   ##-##
+--#--  #####  #####   --#--
+-----  -###-  #####   #---#</pre> 
 <p>Definition at line <a class="el" href="Sprites_8cpp_source.html#l00009">9</a> of file <a class="el" href="Sprites_8cpp_source.html">Sprites.cpp</a>.</p>
 
 </div>
@@ -368,21 +374,21 @@ OO.OO  OOOOO  OOOOO   OO.OO
   </table>
   </dd>
 </dl>
-<p>A sprite is drawn by overwriting the pixels in the buffer with the data from the specified frame in the array. No masking is done. A bit set to 1 in the frame will set the pixel to 1 in the buffer, and a 0 in the array will set a 0 in the buffer. </p><pre class="fragment">image  before  after
+<p>A sprite is drawn by overwriting the pixels in the buffer with the data from the specified frame in the array. No masking is done. A bit set to 1 in the frame will set the pixel to 1 in the buffer, and a 0 in the array will set a 0 in the buffer. </p><pre class="fragment">image  before  after  (# = 1, - = 0)
 
-.....  .....   .....
-..O..  .....   ..O..
-OO.OO  .....   OO.OO
-..O..  .....   ..O..
-.....  .....   .....
+-----  -----   -----
+--#--  -----   --#--
+##-##  -----   ##-##
+--#--  -----   --#--
+-----  -----   -----
 
 image  before  after
 
-.....  OOOOO   .....
-..O..  OOOOO   ..O..
-OO.OO  OOOOO   OO.OO
-..O..  OOOOO   ..O..
-.....  OOOOO   .....</pre> 
+-----  #####   -----
+--#--  #####   --#--
+##-##  #####   ##-##
+--#--  #####   --#--
+-----  #####   -----</pre> 
 <p>Definition at line <a class="el" href="Sprites_8cpp_source.html#l00015">15</a> of file <a class="el" href="Sprites_8cpp_source.html">Sprites.cpp</a>.</p>
 
 </div>
@@ -441,21 +447,21 @@ OO.OO  OOOOO   OO.OO
   </dd>
 </dl>
 <p>An array containing combined image and mask data is used to draw a sprite. Bytes are given in pairs with the first byte representing the image pixels and the second byte specifying the corresponding mask. The width given in the array still specifies the image width, so each row of image and mask bytes will be twice the width value.</p>
-<p>Bits set to 1 in the mask indicate that the pixel will be set to the value of the corresponding image bit. Bits set to 0 in the mask will be left unchanged. </p><pre class="fragment">image  mask   before  after
+<p>Bits set to 1 in the mask indicate that the pixel will be set to the value of the corresponding image bit. Bits set to 0 in the mask will be left unchanged. </p><pre class="fragment">image  mask   before  after  (# = 1, - = 0)
 
-.....  .OOO.  .....   .....
-..O..  OOOOO  .....   ..O..
-OO.OO  OO.OO  .....   OO.OO
-..O..  OOOOO  .....   ..O..
-.....  .OOO.  .....   .....
+-----  -###-  -----   -----
+--#--  #####  -----   --#--
+##-##  ##-##  -----   ##-##
+--#--  #####  -----   --#--
+-----  -###-  -----   -----
 
 image  mask   before  after
 
-.....  .OOO.  OOOOO   O...O
-..O..  OOOOO  OOOOO   ..O..
-OO.OO  OOOOO  OOOOO   OO.OO
-..O..  OOOOO  OOOOO   ..O..
-.....  .OOO.  OOOOO   O...O</pre> 
+-----  -###-  #####   #---#
+--#--  #####  #####   --#--
+##-##  #####  #####   ##-##
+--#--  #####  #####   --#--
+-----  -###-  #####   #---#</pre> 
 <p>Definition at line <a class="el" href="Sprites_8cpp_source.html#l00030">30</a> of file <a class="el" href="Sprites_8cpp_source.html">Sprites.cpp</a>.</p>
 
 </div>
@@ -513,21 +519,21 @@ OO.OO  OOOOO  OOOOO   OO.OO
   </table>
   </dd>
 </dl>
-<p>Bits set to 1 in the frame will be used to draw the sprite by setting the corresponding pixel in the buffer to 1. Bits set to 0 in the frame will remain unchanged in the buffer. </p><pre class="fragment">image  before  after
+<p>Bits set to 1 in the frame will be used to draw the sprite by setting the corresponding pixel in the buffer to 1. Bits set to 0 in the frame will remain unchanged in the buffer. </p><pre class="fragment">image  before  after  (# = 1, - = 0)
 
-.....  .....   .....
-..O..  .....   ..O..
-OO.OO  .....   OO.OO
-..O..  .....   ..O..
-.....  .....   .....
+-----  -----   -----
+--#--  -----   --#--
+##-##  -----   ##-##
+--#--  -----   --#--
+-----  -----   -----
 
 image  before  after
 
-.....  OOOOO   OOOOO  (no change because all pixels were
-..O..  OOOOO   OOOOO  already white)
-OO.OO  OOOOO   OOOOO
-..O..  OOOOO   OOOOO
-.....  OOOOO   OOOOO</pre> 
+-----  #####   #####  (no change because all pixels were
+--#--  #####   #####  already white)
+##-##  #####   #####
+--#--  #####   #####
+-----  #####   #####</pre> 
 <p>Definition at line <a class="el" href="Sprites_8cpp_source.html#l00025">25</a> of file <a class="el" href="Sprites_8cpp_source.html">Sprites.cpp</a>.</p>
 
 </div>
@@ -542,7 +548,7 @@ OO.OO  OOOOO   OOOOO
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSprites.html">Sprites</a></li>
-    <li class="footer">Generated on Mon Jul 31 2017 17:28:56 for Arduboy2 Library by
+    <li class="footer">Generated on Tue Mar 20 2018 21:23:41 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

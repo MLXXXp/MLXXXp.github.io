@@ -1,6 +1,6 @@
 <map id="Arduboy2" name="Arduboy2">
-<area shape="rect" id="node2" href="$classPrint.html" title="The Arduino Print class is available for writing text to the screen buffer. " alt="" coords="5,563,55,641"/>
-<area shape="rect" id="node3" href="$classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output. " alt="" coords="79,380,285,824"/>
-<area shape="rect" id="node4" href="$classArduboy2Core.html" title="Lower level functions generally dealing directly with the hardware. " alt="" coords="20,5,181,317"/>
-<area shape="rect" id="node5" href="$classArduboy2Audio.html" title="Provide speaker and sound control. " alt="" coords="205,86,321,237"/>
+<area shape="rect" id="node2" href="$classPrint.html" title="The Arduino Print class is available for writing text to the screen buffer. " alt="" coords="5,571,55,648"/>
+<area shape="rect" id="node3" href="$classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output. " alt="" coords="79,380,295,839"/>
+<area shape="rect" id="node4" href="$classArduboy2Core.html" title="Lower level functions generally dealing directly with the hardware. " alt="" coords="25,5,187,317"/>
+<area shape="rect" id="node5" href="$classArduboy2Audio.html" title="Provide speaker and sound control. " alt="" coords="211,86,327,237"/>
 </map>

@@ -2,6 +2,7 @@ var Arduboy2Core_8h =
 [
     [ "Arduboy2Core", "classArduboy2Core.html", null ],
     [ "A_BUTTON", "Arduboy2Core_8h.html#a5ec59d5e4f6bfacfdf3aa6e7ed5c0373", null ],
+    [ "ARDUBOY_NO_USB", "Arduboy2Core_8h.html#ac6bc02549c65b647ecc49fe429c0055b", null ],
     [ "B_BUTTON", "Arduboy2Core_8h.html#a2454c318caf152737fd63bebddd58ea2", null ],
     [ "BLUE_LED", "Arduboy2Core_8h.html#a41c7fcbe209a1c236fd1b8e35bd8b55a", null ],
     [ "DOWN_BUTTON", "Arduboy2Core_8h.html#a4f6f90e72ca8160a0894575ad68ea0e8", null ],

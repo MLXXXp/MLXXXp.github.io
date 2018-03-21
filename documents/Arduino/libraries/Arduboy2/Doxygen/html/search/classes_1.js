@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['point',['Point',['../structPoint.html',1,'']]],
-  ['print',['Print',['../classPrint.html',1,'']]]
+  ['beeppin1',['BeepPin1',['../classBeepPin1.html',1,'']]],
+  ['beeppin2',['BeepPin2',['../classBeepPin2.html',1,'']]]
 ];

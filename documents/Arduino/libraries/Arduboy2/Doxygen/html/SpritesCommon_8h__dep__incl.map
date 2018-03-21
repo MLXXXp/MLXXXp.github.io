@@ -1,0 +1,9 @@
+<map id="src/SpritesCommon.h" name="src/SpritesCommon.h">
+<area shape="rect" id="node2" href="$Sprites_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. " alt="" coords="242,80,338,107"/>
+<area shape="rect" id="node5" href="$SpritesB_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size..." alt="" coords="336,229,441,256"/>
+<area shape="rect" id="node3" href="$Arduboy2_8h.html" title="The Arduboy2Base and Arduboy2 classes and support objects and definitions. " alt="" coords="177,155,288,181"/>
+<area shape="rect" id="node8" href="$Sprites_8cpp.html" title="A class for drawing animated sprites from image and mask bitmaps. " alt="" coords="312,155,423,181"/>
+<area shape="rect" id="node4" href="$Arduboy2_8cpp.html" title="The Arduboy2Base and Arduboy2 classes and support objects and definitions. " alt="" coords="5,229,129,256"/>
+<area shape="rect" id="node7" href="$Arduboy2Audio_8cpp.html" title="The Arduboy2Audio class for speaker and sound control. " alt="" coords="154,229,311,256"/>
+<area shape="rect" id="node6" href="$SpritesB_8cpp.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size..." alt="" coords="329,304,448,331"/>
+</map>

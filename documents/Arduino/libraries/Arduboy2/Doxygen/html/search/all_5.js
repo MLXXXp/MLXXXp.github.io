@@ -8,5 +8,7 @@ var searchData=
   ['flashlight',['flashlight',['../classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a',1,'Arduboy2Base']]],
   ['fliphorizontal',['flipHorizontal',['../classArduboy2Core.html#a40fc996602d64545d81ea857e74b23f7',1,'Arduboy2Core']]],
   ['flipvertical',['flipVertical',['../classArduboy2Core.html#a8125a3776ac990b56f7225c9419a527d',1,'Arduboy2Core']]],
-  ['framecount',['frameCount',['../classArduboy2Base.html#a281ecc7c3df686e3e87584794442cda9',1,'Arduboy2Base']]]
+  ['framecount',['frameCount',['../classArduboy2Base.html#a281ecc7c3df686e3e87584794442cda9',1,'Arduboy2Base']]],
+  ['freergbled',['freeRGBled',['../classArduboy2Core.html#a7112beffa140e60b2c32ca22f786903b',1,'Arduboy2Core']]],
+  ['freq',['freq',['../classBeepPin1.html#a04eb48e58d4e443a1b63bb0df44ff092',1,'BeepPin1::freq()'],['../classBeepPin2.html#a2053a11db9c1c29b349a899b7c1dc8db',1,'BeepPin2::freq()']]]
 ];

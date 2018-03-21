@@ -116,7 +116,9 @@ $(document).ready(function(){initNavTree('Arduboy2_8h.html','');});
 <div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
 <code>#include &lt;EEPROM.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Arduboy2Beep_8h_source.html">Arduboy2Beep.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Sprites_8h_source.html">Sprites.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SpritesB_8h_source.html">SpritesB.h</a>&quot;</code><br />
 <code>#include &lt;Print.h&gt;</code><br />
 <code>#include &lt;limits.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="Arduboy2Audio_8h_source.html">Arduboy2Audio.h</a>&quot;</code><br />
@@ -127,9 +129,12 @@ $(document).ready(function(){initNavTree('Arduboy2_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="Arduboy2_8h__incl.png" border="0" usemap="#src_2Arduboy2_8h" alt=""/></div>
 <map name="src_2Arduboy2_8h" id="src_2Arduboy2_8h">
-<area shape="rect" id="node4" href="Arduboy2Core_8h.html" title="The Arduboy2Core class for Arduboy hardware initilization and control. " alt="" coords="110,80,226,107"/>
-<area shape="rect" id="node8" href="Sprites_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. " alt="" coords="499,80,573,107"/>
-<area shape="rect" id="node10" href="Arduboy2Audio_8h.html" title="The Arduboy2Audio class for speaker and sound control. " alt="" coords="353,80,474,107"/>
+<area shape="rect" id="node4" href="Arduboy2Core_8h.html" title="The Arduboy2Core class for Arduboy hardware initilization and control. " alt="" coords="210,80,326,107"/>
+<area shape="rect" id="node9" href="Arduboy2Beep_8h.html" title="Classes to generate simple square wave tones on the Arduboy speaker pins. " alt="" coords="598,80,717,107"/>
+<area shape="rect" id="node10" href="Sprites_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. " alt="" coords="984,80,1059,107"/>
+<area shape="rect" id="node12" href="SpritesB_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size..." alt="" coords="792,80,875,107"/>
+<area shape="rect" id="node14" href="Arduboy2Audio_8h.html" title="The Arduboy2Audio class for speaker and sound control. " alt="" coords="453,80,574,107"/>
+<area shape="rect" id="node11" href="SpritesCommon_8h.html" title="Common header file for sprite functions. " alt="" coords="831,155,958,181"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -141,8 +146,10 @@ $(document).ready(function(){initNavTree('Arduboy2_8h.html','');});
 <map name="src_2Arduboy2_8hdep" id="src_2Arduboy2_8hdep">
 <area shape="rect" id="node2" href="Arduboy2_8cpp.html" title="The Arduboy2Base and Arduboy2 classes and support objects and definitions. " alt="" coords="5,80,129,107"/>
 <area shape="rect" id="node3" href="Sprites_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. " alt="" coords="154,80,250,107"/>
-<area shape="rect" id="node5" href="Arduboy2Audio_8cpp.html" title="The Arduboy2Audio class for speaker and sound control. " alt="" coords="274,80,431,107"/>
-<area shape="rect" id="node4" href="Sprites_8cpp.html" title="A class for drawing animated sprites from image and mask bitmaps. " alt="" coords="147,155,257,181"/>
+<area shape="rect" id="node5" href="SpritesB_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size..." alt="" coords="275,80,380,107"/>
+<area shape="rect" id="node7" href="Arduboy2Audio_8cpp.html" title="The Arduboy2Audio class for speaker and sound control. " alt="" coords="405,80,562,107"/>
+<area shape="rect" id="node4" href="Sprites_8cpp.html" title="A class for drawing animated sprites from image and mask bitmaps. " alt="" coords="140,155,251,181"/>
+<area shape="rect" id="node6" href="SpritesB_8cpp.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size..." alt="" coords="275,155,393,181"/>
 </map>
 </div>
 </div>
@@ -165,7 +172,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a78a935a5a8f7212ccd562c92f738796a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Arduboy2_8h.html#a78a935a5a8f7212ccd562c92f738796a">ARDUBOY_LIB_VER</a>&#160;&#160;&#160;40100</td></tr>
+<tr class="memitem:a78a935a5a8f7212ccd562c92f738796a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Arduboy2_8h.html#a78a935a5a8f7212ccd562c92f738796a">ARDUBOY_LIB_VER</a>&#160;&#160;&#160;50000</td></tr>
 <tr class="memdesc:a78a935a5a8f7212ccd562c92f738796a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library version.  <a href="#a78a935a5a8f7212ccd562c92f738796a">More...</a><br /></td></tr>
 <tr class="separator:a78a935a5a8f7212ccd562c92f738796a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4adb7fae020162ca57752c3197ab1d54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Arduboy2_8h.html#a4adb7fae020162ca57752c3197ab1d54">ARDUBOY_UNIT_NAME_LEN</a>&#160;&#160;&#160;6</td></tr>
@@ -193,7 +200,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ARDUBOY_LIB_VER&#160;&#160;&#160;40100</td>
+          <td class="memname">#define ARDUBOY_LIB_VER&#160;&#160;&#160;50000</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -201,8 +208,8 @@ Macros</h2></td></tr>
 <p>Library version. </p>
 <p>For a version number in the form of x.y.z the value of the define will be ((x * 10000) + (y * 100) + (z)) as a decimal number. So, it will read as xxxyyzz, with no leading zeros on x.</p>
 <p>A user program can test this value to conditionally compile based on the library version. For example:</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;// If the library is version 2.1.0 or higher</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;#if ARDUBOY_LIB_VER &gt;= 20100</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  // ... code that make use of a new feature added to V2.1.0</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;#endif</div></div><!-- fragment --> 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00035">35</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<div class="fragment"><div class="line"><span class="comment">// If the library is version 2.1.0 or higher</span></div><div class="line"><span class="preprocessor">#if ARDUBOY_LIB_VER &gt;= 20100</span></div><div class="line">  <span class="comment">// ... code that make use of a new feature added to V2.1.0</span></div><div class="line"><span class="preprocessor">#endif</span></div></div><!-- fragment --> 
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00037">37</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -217,7 +224,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>The maximum length of the unit name string. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00038">38</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00040">40</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -232,7 +239,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Color value for an unlit pixel for draw functions. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00070">70</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00074">74</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +254,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Value to be passed to <code>display()</code> to clear the screen buffer. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00083">83</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00087">87</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +271,7 @@ Macros</h2></td></tr>
 <p>Start of EEPROM storage space for sketches. </p>
 <p>An area at the start of EEPROM is reserved for system use. This define specifies the first EEPROM location past the system area. Sketches can use locations from here to the end of EEPROM space. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00060">60</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00064">64</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +289,7 @@ Macros</h2></td></tr>
 <p>BLACK pixels will become WHITE and WHITE will become BLACK.</p>
 <dl class="section note"><dt>Note</dt><dd>Only function <a class="el" href="classArduboy2Base.html#a2d57427a8e6bc9d5f5b5630e4fb07c3c" title="Draw a bitmap from an array in program memory. ">Arduboy2Base::drawBitmap()</a> currently supports this value. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00081">81</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00085">85</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +304,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Color value for a lit pixel for draw functions. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00071">71</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00075">75</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -307,7 +314,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Arduboy2_8h.html">Arduboy2.h</a></li>
-    <li class="footer">Generated on Mon Jul 31 2017 17:28:56 for Arduboy2 Library by
+    <li class="footer">Generated on Tue Mar 20 2018 21:23:40 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

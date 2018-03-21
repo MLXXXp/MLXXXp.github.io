@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width',['width',['../structRect.html#a435b7b0c415e6fff3e4073c1e780cb59',1,'Rect']]]
+  ['sbuffer',['sBuffer',['../classArduboy2Base.html#a001a0e77a58306f871fe47135fabb872',1,'Arduboy2Base']]]
 ];

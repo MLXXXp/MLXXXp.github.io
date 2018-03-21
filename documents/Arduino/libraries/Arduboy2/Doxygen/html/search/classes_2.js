@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['rect',['Rect',['../structRect.html',1,'']]]
+  ['point',['Point',['../structPoint.html',1,'']]],
+  ['print',['Print',['../classPrint.html',1,'']]]
 ];

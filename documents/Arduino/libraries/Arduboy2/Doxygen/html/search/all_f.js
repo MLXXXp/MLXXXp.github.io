@@ -6,8 +6,9 @@ var searchData=
   ['sbuffer',['sBuffer',['../classArduboy2Base.html#a001a0e77a58306f871fe47135fabb872',1,'Arduboy2Base']]],
   ['sendlcdcommand',['sendLCDCommand',['../classArduboy2Core.html#ae08f6a422811075fad1faa3c66b09f19',1,'Arduboy2Core']]],
   ['setcursor',['setCursor',['../classArduboy2.html#a5ab1d707ecde0811f77e402c61de25a3',1,'Arduboy2']]],
+  ['setframeduration',['setFrameDuration',['../classArduboy2Base.html#a36c1975547b3fa90280f3bb91e9542ef',1,'Arduboy2Base']]],
   ['setframerate',['setFrameRate',['../classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d',1,'Arduboy2Base']]],
-  ['setrgbled',['setRGBled',['../classArduboy2Core.html#a00b90ecdc25c5f31eab40ba4a906ba8b',1,'Arduboy2Core']]],
+  ['setrgbled',['setRGBled',['../classArduboy2Core.html#a00b90ecdc25c5f31eab40ba4a906ba8b',1,'Arduboy2Core::setRGBled(uint8_t red, uint8_t green, uint8_t blue)'],['../classArduboy2Core.html#ae0c056cd03697725188dc420f0001c19',1,'Arduboy2Core::setRGBled(uint8_t color, uint8_t val)']]],
   ['settextbackground',['setTextBackground',['../classArduboy2.html#aceb292fd4c3dd298e523421bb0f51236',1,'Arduboy2']]],
   ['settextcolor',['setTextColor',['../classArduboy2.html#a7a57fc5d34bb080ac03052c03fc1790d',1,'Arduboy2']]],
   ['settextsize',['setTextSize',['../classArduboy2.html#a810d65a88097a98ddf25ed1cfee271e0',1,'Arduboy2']]],
@@ -16,5 +17,9 @@ var searchData=
   ['sprites',['Sprites',['../classSprites.html',1,'']]],
   ['sprites_2ecpp',['Sprites.cpp',['../Sprites_8cpp.html',1,'']]],
   ['sprites_2eh',['Sprites.h',['../Sprites_8h.html',1,'']]],
+  ['spritesb',['SpritesB',['../classSpritesB.html',1,'']]],
+  ['spritesb_2ecpp',['SpritesB.cpp',['../SpritesB_8cpp.html',1,'']]],
+  ['spritesb_2eh',['SpritesB.h',['../SpritesB_8h.html',1,'']]],
+  ['spritescommon_2eh',['SpritesCommon.h',['../SpritesCommon_8h.html',1,'']]],
   ['systembuttons',['systemButtons',['../classArduboy2Base.html#ad6dc5d0b396938daee143010bba64182',1,'Arduboy2Base']]]
 ];

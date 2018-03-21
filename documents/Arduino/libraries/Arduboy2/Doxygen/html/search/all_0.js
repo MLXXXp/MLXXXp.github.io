@@ -10,10 +10,13 @@ var searchData=
   ['arduboy2audio_2ecpp',['Arduboy2Audio.cpp',['../Arduboy2Audio_8cpp.html',1,'']]],
   ['arduboy2audio_2eh',['Arduboy2Audio.h',['../Arduboy2Audio_8h.html',1,'']]],
   ['arduboy2base',['Arduboy2Base',['../classArduboy2Base.html',1,'']]],
+  ['arduboy2beep_2ecpp',['Arduboy2Beep.cpp',['../Arduboy2Beep_8cpp.html',1,'']]],
+  ['arduboy2beep_2eh',['Arduboy2Beep.h',['../Arduboy2Beep_8h.html',1,'']]],
   ['arduboy2core',['Arduboy2Core',['../classArduboy2Core.html',1,'']]],
   ['arduboy2core_2ecpp',['Arduboy2Core.cpp',['../Arduboy2Core_8cpp.html',1,'']]],
   ['arduboy2core_2eh',['Arduboy2Core.h',['../Arduboy2Core_8h.html',1,'']]],
   ['arduboy_5flib_5fver',['ARDUBOY_LIB_VER',['../Arduboy2_8h.html#a78a935a5a8f7212ccd562c92f738796a',1,'Arduboy2.h']]],
+  ['arduboy_5fno_5fusb',['ARDUBOY_NO_USB',['../Arduboy2Core_8h.html#ac6bc02549c65b647ecc49fe429c0055b',1,'Arduboy2Core.h']]],
   ['arduboy_5funit_5fname_5flen',['ARDUBOY_UNIT_NAME_LEN',['../Arduboy2_8h.html#a4adb7fae020162ca57752c3197ab1d54',1,'Arduboy2.h']]],
   ['audio',['audio',['../classArduboy2Base.html#a4b51510fd8ea2a35e0e4098af209ca88',1,'Arduboy2Base']]],
   ['arduboy2_20library',['Arduboy2 Library',['../index.html',1,'']]]
