@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['generaterandomseed',['generateRandomSeed',['../classArduboy2Base.html#a30cf4eb06dd7791f32c560c1cd8e433e',1,'Arduboy2Base']]],
   ['getbuffer',['getBuffer',['../classArduboy2Base.html#aacd29034dd9dbd15e0906924c9e3e379',1,'Arduboy2Base']]],
   ['getcursorx',['getCursorX',['../classArduboy2.html#ac645a477351f23e4544aed88dcdae007',1,'Arduboy2']]],
   ['getcursory',['getCursorY',['../classArduboy2.html#afc291e1f45319aca8c7d932b5864b134',1,'Arduboy2']]],

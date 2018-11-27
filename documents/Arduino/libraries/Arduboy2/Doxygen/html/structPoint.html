@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('structPoint.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structPoint-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -127,6 +128,16 @@ $(document).ready(function(){initNavTree('structPoint.html','');});
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a257415ad611a16bb73628efcdb87d0fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a257415ad611a16bb73628efcdb87d0fd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPoint.html#a257415ad611a16bb73628efcdb87d0fd">Point</a> ()=default</td></tr>
+<tr class="memdesc:a257415ad611a16bb73628efcdb87d0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor. <br /></td></tr>
+<tr class="separator:a257415ad611a16bb73628efcdb87d0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22238e548e04b8280a38b4a8b612e1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPoint.html#af22238e548e04b8280a38b4a8b612e1a">Point</a> (int16_t <a class="el" href="structPoint.html#a664d56a48f132205b2fef1fa8881f977">x</a>, int16_t <a class="el" href="structPoint.html#a98c089a03a53ca16d6233881ee1e1700">y</a>)</td></tr>
+<tr class="memdesc:af22238e548e04b8280a38b4a8b612e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fully initializing constructor.  <a href="#af22238e548e04b8280a38b4a8b612e1a">More...</a><br /></td></tr>
+<tr class="separator:af22238e548e04b8280a38b4a8b612e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a664d56a48f132205b2fef1fa8881f977"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPoint.html#a664d56a48f132205b2fef1fa8881f977">x</a></td></tr>
@@ -137,10 +148,48 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An object to define a single point for collision functions. </p>
 <p>The location of the point is given by X and Y coordinates.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a2bda6693a08b299e275a97dd30254560" title="Test if a point falls within a rectangle. ">Arduboy2Base::collide(Point, Rect)</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a2bda6693a08b299e275a97dd30254560" title="Test if a point falls within a rectangle. ">Arduboy2Base::collide(Point, Rect)</a> <a class="el" href="structRect.html" title="A rectangle object for collision functions. ">Rect</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00117">117</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00140">140</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af22238e548e04b8280a38b4a8b612e1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point::Point </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The fully initializing constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The X coordinate of the point. Copied to variable <code>x</code>. </td></tr>
+    <tr><td class="paramname">y</td><td>The Y coordinate of the point. Copied to variable <code>y</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Arduboy2_8cpp_source.html#l00024">24</a> of file <a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a664d56a48f132205b2fef1fa8881f977"></a>
 <div class="memitem">
 <div class="memproto">
@@ -152,7 +201,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The X coordinate of the point </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00119">119</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00142">142</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
@@ -167,12 +216,13 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The Y coordinate of the point </p>
 
-<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00120">120</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2_8h_source.html#l00143">143</a> of file <a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/<a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a></li>
+<li>src/<a class="el" href="Arduboy2_8cpp_source.html">Arduboy2.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -180,7 +230,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structPoint.html">Point</a></li>
-    <li class="footer">Generated on Sat Apr 7 2018 15:04:25 for Arduboy2 Library by
+    <li class="footer">Generated on Mon Nov 26 2018 18:43:59 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

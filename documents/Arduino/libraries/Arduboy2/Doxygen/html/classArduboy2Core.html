@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('classArduboy2Core.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classArduboy2Core__inherit__graph.png" border="0" usemap="#Arduboy2Core_inherit__map" alt="Inheritance graph"/></div>
 <map name="Arduboy2Core_inherit__map" id="Arduboy2Core_inherit__map">
-<area shape="rect" id="node2" href="classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output. " alt="" coords="5,365,221,839"/>
-<area shape="rect" id="node3" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. " alt="" coords="50,887,177,1184"/>
+<area shape="rect" id="node2" href="classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output. " alt="" coords="5,365,221,883"/>
+<area shape="rect" id="node3" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. " alt="" coords="50,931,177,1228"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -227,7 +227,7 @@ Static Public Member Functions</h2></td></tr>
 <p>This class is inherited by <a class="el" href="classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output. ">Arduboy2Base</a> and thus also <a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. ">Arduboy2</a>, so wouldn't normally be used directly by a sketch.</p>
 <dl class="section note"><dt>Note</dt><dd>A friend class named <em>Arduboy2Ex</em> is declared by this class. The intention is to allow a sketch to create an <em>Arduboy2Ex</em> class which would have access to the private and protected members of the <a class="el" href="classArduboy2Core.html" title="Lower level functions generally dealing directly with the hardware. ">Arduboy2Core</a> class. It is hoped that this may eliminate the need to create an entire local copy of the library, in order to extend the functionality, in most circumstances. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00333">333</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8h_source.html#l00331">331</a> of file <a class="el" href="Arduboy2Core_8h_source.html">Arduboy2Core.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a54f6301ddf9197e6f4fca095faf845a2"></a>
 <div class="memitem">
@@ -263,7 +263,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>All pixels will be lit even if the display is in inverted mode.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a60cb1b3076a5139bca3dfed43351330f" title="Invert the entire display or set it back to normal. ">invert()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00414">414</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00416">416</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -291,7 +291,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Blank the display screen by setting all pixels off. </p>
 <p>All pixels on the screen will be written with a value of 0 to turn them off. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00392">392</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00394">394</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -321,7 +321,7 @@ Static Public Member Functions</h2></td></tr>
 <p>This function is called by begin() so isn't normally called within a sketch. However, in order to free up some code space, by eliminating some of the start up features, it can be called in place of begin(). The functions that begin() would call after <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> can then be called to add back in some of the start up features, if desired. See the README file or documentation on the main page for more details.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317" title="Initialize the hardware, display the boot logo, provide boot utilities, etc. ">Arduboy2Base::begin()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00076">76</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00078">78</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ Static Public Member Functions</h2></td></tr>
 <p>The following defined mask values should be used for the buttons:</p>
 <p>LEFT_BUTTON, RIGHT_BUTTON, UP_BUTTON, DOWN_BUTTON, A_BUTTON, B_BUTTON </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00528">528</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00530">530</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -387,7 +387,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <p>This function works the same as the Arduino <code>delay()</code> function except the provided value is 16 bits long, so the maximum delay allowed is 65535 milliseconds (about 65.5 seconds). Using this function instead of Arduino <code>delay()</code> will save a few bytes of code. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00557">557</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00559">559</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <dl class="section note"><dt>Note</dt><dd>Many of the Kickstarter Arduboys were accidentally shipped with the RGB LED installed incorrectly. For these units, the green LED cannot be lit. As long as the green led is set to off, turning on the red LED will actually light the blue LED and turning on the blue LED will actually light the red LED. If the green LED is turned on, none of the LEDs will light. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a52c2437adda2e9b6972b3dd50d867b4c" title="Set one of the RGB LEDs digitally, to either fully on or fully off. ">digitalWriteRGB(uint8_t, uint8_t)</a> <a class="el" href="classArduboy2Core.html#a00b90ecdc25c5f31eab40ba4a906ba8b" title="Set the light output of the RGB LED. ">setRGBled()</a> <a class="el" href="classArduboy2Core.html#a7112beffa140e60b2c32ca22f786903b" title="Relinquish analog control of the RGB LED. ">freeRGBled()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00488">488</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00490">490</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -498,7 +498,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>This 2 parameter version of the function will set a single LED within the RGB LED either fully on or fully off. See the description of the 3 parameter version of this function for more details on the RGB LED.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a8bb32aa7c24306aa2c01517648f9a1cf" title="Set the RGB LEDs digitally, to either fully on or fully off. ">digitalWriteRGB(uint8_t, uint8_t, uint8_t)</a> <a class="el" href="classArduboy2Core.html#a00b90ecdc25c5f31eab40ba4a906ba8b" title="Set the light output of the RGB LED. ">setRGBled()</a> <a class="el" href="classArduboy2Core.html#a7112beffa140e60b2c32ca22f786903b" title="Relinquish analog control of the RGB LED. ">freeRGBled()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00502">502</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00504">504</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -527,7 +527,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <p>The display will clear and be put into a low power mode. This can be used to extend battery life when a game is paused or when a sketch doesn't require anything to be displayed for a relatively long period of time.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#aeb51abef6c0eb7a1bbf164b0bf438c1c" title="Turn the display on. ">displayOn()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00283">283</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00285">285</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -557,7 +557,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 <dl class="section note"><dt>Note</dt><dd>The previous call to <code><a class="el" href="classArduboy2Core.html#a8545a227303d22a039f22a9500828ab8" title="Turn the display off. ">displayOff()</a></code> will have caused the display's buffer contents to be lost. The display will have to be re-painted, which is usually done by calling <code>display()</code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a8545a227303d22a039f22a9500828ab8" title="Turn the display off. ">displayOff()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00294">294</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00296">296</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ RGB_ON     RGB_ON     RGB_ON     White
 to upload a new sketch has been initiated". The sketch would then wait for the DOWN button to be pressed and then call this function.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="Arduboy2Core_8h.html#ac6bc02549c65b647ecc49fe429c0055b" title="Eliminate the USB stack to free up code space. ">ARDUBOY_NO_USB</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00562">562</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00564">564</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -625,7 +625,7 @@ to upload a new sketch has been initiated". The sketch would then wait for the D
 <p>Once in horizontal flip mode, it will remain this way until normal horizontal mode is set by calling this function with a value of <code>false</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a8125a3776ac990b56f7225c9419a527d" title="Flip the display vertically or set it back to normal. ">flipVertical()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00426">426</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00428">428</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -662,7 +662,7 @@ to upload a new sketch has been initiated". The sketch would then wait for the D
 <p>Once in vertical flip mode, it will remain this way until normal vertical mode is set by calling this function with a value of <code>false</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a40fc996602d64545d81ea857e74b23f7" title="Flip the display horizontally or set it back to normal. ">flipHorizontal()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00420">420</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00422">422</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -691,7 +691,7 @@ to upload a new sketch has been initiated". The sketch would then wait for the D
 <p>Using the RGB LED in analog mode prevents further use of the LED in digital mode. This function will restore the pins used for the LED, so it can be used in digital mode.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a8bb32aa7c24306aa2c01517648f9a1cf" title="Set the RGB LEDs digitally, to either fully on or fully off. ">digitalWriteRGB()</a> <a class="el" href="classArduboy2Core.html#a00b90ecdc25c5f31eab40ba4a906ba8b" title="Set the light output of the RGB LED. ">setRGBled()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00479">479</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00481">481</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -720,7 +720,7 @@ to upload a new sketch has been initiated". The sketch would then wait for the D
 <dl class="section return"><dt>Returns</dt><dd>The height of the display in pixels.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>In most cases, the defined value <code>HEIGHT</code> would be better to use instead of this function. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00301">301</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00303">303</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -748,7 +748,7 @@ to upload a new sketch has been initiated". The sketch would then wait for the D
 <p>Idle the CPU to save power. </p>
 <p>This puts the CPU in <em>idle</em> sleep mode. You should call this as often as you can for the best power savings. The timer 0 overflow interrupt will wake up the chip every 1ms, so even at 60 FPS a well written app should be able to sleep maybe half the time in between rendering it's own frames. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00266">266</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00268">268</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -784,7 +784,7 @@ to upload a new sketch has been initiated". The sketch would then wait for the D
 <p>Calling this function with a value of <code>true</code> will set the display to inverted mode. A pixel with a value of 0 will be on and a pixel set to 1 will be off.</p>
 <p>Once in inverted mode, the display will remain this way until it is set back to non-inverted mode by calling this function with <code>false</code>. </p>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00407">407</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00409">409</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -820,7 +820,7 @@ to upload a new sketch has been initiated". The sketch would then wait for the D
 <dl class="section note"><dt>Note</dt><dd>This is a low level function that is not intended for general use in a sketch. It has been made public and documented for use by derived classes.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a2308c4b4a919d85f26d9e76f4e30e6ea" title="Put the display into data mode. ">LCDDataMode()</a> <a class="el" href="classArduboy2Core.html#ae08f6a422811075fad1faa3c66b09f19" title="Send a single command byte to the display. ">sendLCDCommand()</a> <a class="el" href="classArduboy2Core.html#afe19d50fc0b9c845369caf41fef590c9" title="Transfer a byte to the display. ">SPItransfer()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00220">220</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00222">222</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -850,7 +850,7 @@ to upload a new sketch has been initiated". The sketch would then wait for the D
 <dl class="section note"><dt>Note</dt><dd>This is a low level function that is not intended for general use in a sketch. It has been made public and documented for use by derived classes.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a65dd968eff178df135150cdecef9a7ba" title="Put the display into command mode. ">LCDCommandMode()</a> <a class="el" href="classArduboy2Core.html#afe19d50fc0b9c845369caf41fef590c9" title="Transfer a byte to the display. ">SPItransfer()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00215">215</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00217">217</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -898,7 +898,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 . . . . . . . .                  X . X . . . . .
 . . . . . . . . (end of page 1)  X . X . . . . . (end of page 1)
 . . . . . . . . (page 2)         . . . . . . . . (page 2)</pre> 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00306">306</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00308">308</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -934,7 +934,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>The contents of the specified array in program memory is written to the display. Each byte in the array represents a vertical column of 8 pixels with the least significant bit at the top. The bytes are written starting at the top left, progressing horizontally and wrapping at the end of each row, to the bottom right. The size of the array must exactly match the number of pixels in the entire display.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#ae1774e369d406def93242881abd43bb3" title="Paint 8 pixels vertically to the display. ">paint8Pixels()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00311">311</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00313">313</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -982,7 +982,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>If parameter <code>clear</code> is set to <code>true</code> the RAM array will be cleared to zeros after its contents are written to the display.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#ae1774e369d406def93242881abd43bb3" title="Paint 8 pixels vertically to the display. ">paint8Pixels()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00325">325</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00327">327</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1013,7 +1013,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>It is intended to replace the <code>flashlight()</code> function when more program space is required. If possible, it is more desirable to use <code>flashlight()</code>, so that the actual flashlight feature isn't lost.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a" title="Turn the RGB LED and display fully on to act as a small flashlight/torch. ">Arduboy2Base::flashlight()</a> <a class="el" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1" title="Initialize the Arduboy&#39;s hardware. ">boot()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00247">247</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00249">249</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1049,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>The display will be set to command mode then the specified command byte will be sent. The display will then be set to data mode. Multi-byte commands can be sent by calling this function multiple times.</p>
 <dl class="section note"><dt>Note</dt><dd>Sending improper commands to the display can place it into invalid or unexpected states, possibly even causing physical damage. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00398">398</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00400">400</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1103,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <dl class="section note"><dt>Note</dt><dd>Many of the Kickstarter Arduboys were accidentally shipped with the RGB LED installed incorrectly. For these units, the green LED cannot be lit. As long as the green led is set to off, setting the red LED will actually control the blue LED and setting the blue LED will actually control the red LED. If the green LED is turned fully on, none of the LEDs will light. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#ae0c056cd03697725188dc420f0001c19" title="Set the brightness of one of the RGB LEDs without affecting the others. ">setRGBled(uint8_t, uint8_t)</a> <a class="el" href="classArduboy2Core.html#a8bb32aa7c24306aa2c01517648f9a1cf" title="Set the RGB LEDs digitally, to either fully on or fully off. ">digitalWriteRGB()</a> <a class="el" href="classArduboy2Core.html#a7112beffa140e60b2c32ca22f786903b" title="Relinquish analog control of the RGB LED. ">freeRGBled()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00433">433</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00435">435</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1151,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>This 2 parameter version of the function will set the brightness of a single LED within the RGB LED without affecting the current brightness of the other two. See the description of the 3 parameter version of this function for more details on the RGB LED.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a00b90ecdc25c5f31eab40ba4a906ba8b" title="Set the light output of the RGB LED. ">setRGBled(uint8_t, uint8_t, uint8_t)</a> <a class="el" href="classArduboy2Core.html#a8bb32aa7c24306aa2c01517648f9a1cf" title="Set the RGB LEDs digitally, to either fully on or fully off. ">digitalWriteRGB()</a> <a class="el" href="classArduboy2Core.html#a7112beffa140e60b2c32ca22f786903b" title="Relinquish analog control of the RGB LED. ">freeRGBled()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00455">455</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00457">457</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1187,7 +1187,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <p>Transfer one byte to the display over the SPI port and wait for the transfer to complete. The byte will either be interpreted as a command or as data to be placed on the screen, depending on the command/data mode.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2Core.html#a2308c4b4a919d85f26d9e76f4e30e6ea" title="Put the display into data mode. ">LCDDataMode()</a> <a class="el" href="classArduboy2Core.html#a65dd968eff178df135150cdecef9a7ba" title="Put the display into command mode. ">LCDCommandMode()</a> <a class="el" href="classArduboy2Core.html#ae08f6a422811075fad1faa3c66b09f19" title="Send a single command byte to the display. ">sendLCDCommand()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00234">234</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00236">236</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1216,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <dl class="section return"><dt>Returns</dt><dd>The width of the display in pixels.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>In most cases, the defined value <code>WIDTH</code> would be better to use instead of this function. </dd></dl>
 
-<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00299">299</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Arduboy2Core_8cpp_source.html#l00301">301</a> of file <a class="el" href="Arduboy2Core_8cpp_source.html">Arduboy2Core.cpp</a>.</p>
 
 </div>
 </div>
@@ -1230,7 +1230,7 @@ v TOP LEFT corner (8x9)          v TOP LEFT corner
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classArduboy2Core.html">Arduboy2Core</a></li>
-    <li class="footer">Generated on Sat Apr 7 2018 15:04:25 for Arduboy2 Library by
+    <li class="footer">Generated on Mon Nov 26 2018 18:43:59 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,4 +1,4 @@
 <map id="Arduboy2Core" name="Arduboy2Core">
-<area shape="rect" id="node2" href="$classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output. " alt="" coords="5,365,221,839"/>
-<area shape="rect" id="node3" href="$classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. " alt="" coords="50,887,177,1184"/>
+<area shape="rect" id="node2" href="$classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output. " alt="" coords="5,365,221,883"/>
+<area shape="rect" id="node3" href="$classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. " alt="" coords="50,931,177,1228"/>
 </map>
