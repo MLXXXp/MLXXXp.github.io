@@ -1,0 +1,16 @@
+<map id="Arduboy2Data.cpp" name="Arduboy2Data.cpp">
+<area shape="rect" id="node1" title="Constant data definintions for the Arduboy2 and Arduboy2Base classes." alt="" coords="504,5,635,32"/>
+<area shape="rect" id="node2" href="$Arduboy2_8h.html" title="The Arduboy2Base and Arduboy2 classes and support objects and definitions." alt="" coords="463,80,551,107"/>
+<area shape="rect" id="node14" title=" " alt="" coords="575,80,689,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="159,229,236,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,96,256"/>
+<area shape="rect" id="node5" href="$Arduboy2Core_8h.html" title="The Arduboy2Core class for Arduboy hardware initilization and control." alt="" coords="247,155,363,181"/>
+<area shape="rect" id="node8" href="$Arduboy2Audio_8h.html" title="The Arduboy2Audio class for speaker and sound control." alt="" coords="50,155,171,181"/>
+<area shape="rect" id="node9" href="$Arduboy2Beep_8h.html" title="Classes to generate simple square wave tones on the Arduboy speaker pins." alt="" coords="387,155,506,181"/>
+<area shape="rect" id="node10" href="$Sprites_8h.html" title="A class for drawing animated sprites from image and mask bitmaps." alt="" coords="529,155,604,181"/>
+<area shape="rect" id="node12" href="$SpritesB_8h.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size." alt="" coords="628,155,711,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="735,155,795,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="260,229,351,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="375,229,462,256"/>
+<area shape="rect" id="node11" href="$SpritesCommon_8h.html" title="Common header file for sprite functions." alt="" coords="554,229,681,256"/>
+</map>

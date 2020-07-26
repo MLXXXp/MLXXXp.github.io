@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['height',['height',['../classArduboy2Core.html#ac03114470757bb68d7f9dd87a00d3549',1,'Arduboy2Core']]]
+  ['height_257',['height',['../classArduboy2Core.html#a0ee7bbefa055287d153bc5e620124ccd',1,'Arduboy2Core']]]
 ];

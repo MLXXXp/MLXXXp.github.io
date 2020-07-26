@@ -5,6 +5,7 @@ var Arduboy2_8h =
     [ "Arduboy2Base", "classArduboy2Base.html", "classArduboy2Base" ],
     [ "Arduboy2", "classArduboy2.html", "classArduboy2" ],
     [ "ARDUBOY_LIB_VER", "Arduboy2_8h.html#a78a935a5a8f7212ccd562c92f738796a", null ],
+    [ "ARDUBOY_UNIT_NAME_BUFFER_SIZE", "Arduboy2_8h.html#abb397f67e01ef71689e816a278eb86cb", null ],
     [ "ARDUBOY_UNIT_NAME_LEN", "Arduboy2_8h.html#a4adb7fae020162ca57752c3197ab1d54", null ],
     [ "BLACK", "Arduboy2_8h.html#a7b3b25cba33b07c303f3060fe41887f6", null ],
     [ "CLEAR_BUFFER", "Arduboy2_8h.html#aa28dd17f6f34a0944a90f741b0251239", null ],

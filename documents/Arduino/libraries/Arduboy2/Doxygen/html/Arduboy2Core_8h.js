@@ -1,6 +1,6 @@
 var Arduboy2Core_8h =
 [
-    [ "Arduboy2Core", "classArduboy2Core.html", null ],
+    [ "Arduboy2Core", "classArduboy2Core.html", "classArduboy2Core" ],
     [ "A_BUTTON", "Arduboy2Core_8h.html#a5ec59d5e4f6bfacfdf3aa6e7ed5c0373", null ],
     [ "ARDUBOY_NO_USB", "Arduboy2Core_8h.html#ac6bc02549c65b647ecc49fe429c0055b", null ],
     [ "B_BUTTON", "Arduboy2Core_8h.html#a2454c318caf152737fd63bebddd58ea2", null ],

@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classArduboy2Core.html" title="Lower level functions generally dealing directly with the hardware. " alt="" coords="5,5,111,32"/>
-<area shape="rect" id="node2" href="$classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output. " alt="" coords="159,5,265,32"/>
-<area shape="rect" id="node3" href="$classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output. " alt="" coords="313,31,391,57"/>
-<area shape="rect" id="node4" href="$classPrint.html" title="The Arduino Print class is available for writing text to the screen buffer. " alt="" coords="187,56,237,83"/>
+<area shape="rect" id="node1" href="$classArduboy2Core.html" title="Lower level functions generally dealing directly with the hardware." alt="" coords="5,5,111,32"/>
+<area shape="rect" id="node2" href="$classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output." alt="" coords="159,5,265,32"/>
+<area shape="rect" id="node3" href="$classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output." alt="" coords="313,31,391,57"/>
+<area shape="rect" id="node4" href="$classPrint.html" title="The Arduino Print class is available for writing text to the screen buffer." alt="" coords="187,56,237,83"/>
 </map>
