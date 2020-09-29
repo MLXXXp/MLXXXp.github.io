@@ -31,7 +31,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Arduboy2 Library
-   &#160;<span id="projectnumber">5.3.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -174,7 +174,7 @@ frequency=1000000/(count+1)
 <div class="line"><a class="code" href="classBeepPin1.html">BeepPin1</a> beep; <span class="comment">// class instance for speaker pin 1</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317">begin</a>();</div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2.html#a9f4d4313ee2998572a2105d6594baaa1">begin</a>();</div>
 <div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d">setFrameRate</a>(50);</div>
 <div class="line">  beep.<a class="code" href="classBeepPin1.html#ad0ff2fe2542a7b452a30a96eead3c44f">begin</a>(); <span class="comment">// set up the hardware for playing tones</span></div>
 <div class="line">}</div>
@@ -460,24 +460,24 @@ frequency=1000000/(count+1)
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassBeepPin1_html"><div class="ttname"><a href="classBeepPin1.html">BeepPin1</a></div><div class="ttdoc">Play simple square wave tones using speaker pin 1.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Beep_8h_source.html#l00120">Arduboy2Beep.h:121</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_a2f275c7d4a3438f7be543a02eb9a7d00"><div class="ttname"><a href="classArduboy2Base.html#a2f275c7d4a3438f7be543a02eb9a7d00">Arduboy2Base::pollButtons</a></div><div class="ttdeci">void pollButtons()</div><div class="ttdoc">Poll the buttons and track their state over time.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l01023">Arduboy2.cpp:1023</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_a2f275c7d4a3438f7be543a02eb9a7d00"><div class="ttname"><a href="classArduboy2Base.html#a2f275c7d4a3438f7be543a02eb9a7d00">Arduboy2Base::pollButtons</a></div><div class="ttdeci">static void pollButtons()</div><div class="ttdoc">Poll the buttons and track their state over time.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l01027">Arduboy2.cpp:1027</a></div></div>
 <div class="ttc" id="aclassBeepPin1_html_ad0ff2fe2542a7b452a30a96eead3c44f"><div class="ttname"><a href="classBeepPin1.html#ad0ff2fe2542a7b452a30a96eead3c44f">BeepPin1::begin</a></div><div class="ttdeci">static void begin()</div><div class="ttdoc">Set up the hardware.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Beep_8cpp_source.html#l00016">Arduboy2Beep.cpp:16</a></div></div>
-<div class="ttc" id="aclassArduboy2_html"><div class="ttname"><a href="classArduboy2.html">Arduboy2</a></div><div class="ttdoc">The main functions provided for writing sketches for the Arduboy, including text output.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l01450">Arduboy2.h:1451</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_acab90d5bfbcb9a65841cd9f812dbbf97"><div class="ttname"><a href="classArduboy2Base.html#acab90d5bfbcb9a65841cd9f812dbbf97">Arduboy2Base::justPressed</a></div><div class="ttdeci">bool justPressed(uint8_t button)</div><div class="ttdoc">Check if a button has just been pressed.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l01029">Arduboy2.cpp:1029</a></div></div>
+<div class="ttc" id="aclassArduboy2_html"><div class="ttname"><a href="classArduboy2.html">Arduboy2</a></div><div class="ttdoc">The main functions provided for writing sketches for the Arduboy, including text output.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l01575">Arduboy2.h:1576</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_acab90d5bfbcb9a65841cd9f812dbbf97"><div class="ttname"><a href="classArduboy2Base.html#acab90d5bfbcb9a65841cd9f812dbbf97">Arduboy2Base::justPressed</a></div><div class="ttdeci">static bool justPressed(uint8_t button)</div><div class="ttdoc">Check if a button has just been pressed.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l01033">Arduboy2.cpp:1033</a></div></div>
 <div class="ttc" id="aArduboy2Core_8h_html_a5ec59d5e4f6bfacfdf3aa6e7ed5c0373"><div class="ttname"><a href="Arduboy2Core_8h.html#a5ec59d5e4f6bfacfdf3aa6e7ed5c0373">A_BUTTON</a></div><div class="ttdeci">#define A_BUTTON</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Core_8h_source.html#l00072">Arduboy2Core.h:71</a></div></div>
 <div class="ttc" id="aclassBeepPin1_html_a04eb48e58d4e443a1b63bb0df44ff092"><div class="ttname"><a href="classBeepPin1.html#a04eb48e58d4e443a1b63bb0df44ff092">BeepPin1::freq</a></div><div class="ttdeci">static constexpr uint16_t freq(const float hz)</div><div class="ttdoc">Convert a frequency to the required count.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Beep_8h_source.html#l00250">Arduboy2Beep.h:250</a></div></div>
 <div class="ttc" id="aclassBeepPin1_html_a9a18784ea68a9c1effa2f3c2a46fdd4f"><div class="ttname"><a href="classBeepPin1.html#a9a18784ea68a9c1effa2f3c2a46fdd4f">BeepPin1::duration</a></div><div class="ttdeci">static uint8_t duration</div><div class="ttdoc">The counter used by the timer() function to time the duration of a tone.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Beep_8h_source.html#l00146">Arduboy2Beep.h:146</a></div></div>
 <div class="ttc" id="aclassBeepPin1_html_aac2fe898dea4a841cdf26a5daabb2c36"><div class="ttname"><a href="classBeepPin1.html#aac2fe898dea4a841cdf26a5daabb2c36">BeepPin1::tone</a></div><div class="ttdeci">static void tone(uint16_t count)</div><div class="ttdoc">Play a tone continually, until replaced by a new tone or stopped.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Beep_8cpp_source.html#l00022">Arduboy2Beep.cpp:22</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_a3ddef9eba2ac41983d7d1f05367dff3d"><div class="ttname"><a href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d">Arduboy2Base::nextFrame</a></div><div class="ttdeci">bool nextFrame()</div><div class="ttdoc">Indicate that it's time to render the next frame.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00230">Arduboy2.cpp:230</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_a8a917f8ad5bc1a81c85e12ce2ad4a317"><div class="ttname"><a href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317">Arduboy2Base::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the hardware, display the boot logo, provide boot utilities, etc.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00028">Arduboy2.cpp:28</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_a3ddef9eba2ac41983d7d1f05367dff3d"><div class="ttname"><a href="classArduboy2Base.html#a3ddef9eba2ac41983d7d1f05367dff3d">Arduboy2Base::nextFrame</a></div><div class="ttdeci">static bool nextFrame()</div><div class="ttdoc">Indicate that it's time to render the next frame.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00237">Arduboy2.cpp:237</a></div></div>
+<div class="ttc" id="aclassArduboy2_html_a9f4d4313ee2998572a2105d6594baaa1"><div class="ttname"><a href="classArduboy2.html#a9f4d4313ee2998572a2105d6594baaa1">Arduboy2::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the hardware, display the boot logo, provide boot utilities, etc.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l01170">Arduboy2.cpp:1170</a></div></div>
 <div class="ttc" id="aArduboy2_8h_html"><div class="ttname"><a href="Arduboy2_8h.html">Arduboy2.h</a></div><div class="ttdoc">The Arduboy2Base and Arduboy2 classes and support objects and definitions.</div></div>
-<div class="ttc" id="aclassArduboy2Base_html_a6067bc5cf843a60f3c30f9ab6362018d"><div class="ttname"><a href="classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d">Arduboy2Base::setFrameRate</a></div><div class="ttdeci">void setFrameRate(uint8_t rate)</div><div class="ttdoc">Set the frame rate used by the frame control functions.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00215">Arduboy2.cpp:215</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_a6067bc5cf843a60f3c30f9ab6362018d"><div class="ttname"><a href="classArduboy2Base.html#a6067bc5cf843a60f3c30f9ab6362018d">Arduboy2Base::setFrameRate</a></div><div class="ttdeci">static void setFrameRate(uint8_t rate)</div><div class="ttdoc">Set the frame rate used by the frame control functions.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00222">Arduboy2.cpp:222</a></div></div>
 <div class="ttc" id="aclassBeepPin1_html_a4bcaca420ac1a46f30bc5314f64bffc7"><div class="ttname"><a href="classBeepPin1.html#a4bcaca420ac1a46f30bc5314f64bffc7">BeepPin1::timer</a></div><div class="ttdeci">static void timer()</div><div class="ttdoc">Handle the duration that a tone plays for.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Beep_8cpp_source.html#l00034">Arduboy2Beep.cpp:34</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classBeepPin1.html">BeepPin1</a></li>
-    <li class="footer">Generated on Fri Jul 24 2020 16:17:17 for Arduboy2 Library by
+    <li class="footer">Generated on Tue Sep 29 2020 14:29:54 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

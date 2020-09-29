@@ -31,7 +31,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Arduboy2 Library
-   &#160;<span id="projectnumber">5.3.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__home_sa_Programs_arduino_Arduboy_libraries_Arduboy2_README"></a> The <a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a> library is maintained in a git repository hosted on <a href="https://github.com/">GitHub</a> at:</p>
 <p><a href="https://github.com/MLXXXp/Arduboy2">https://github.com/MLXXXp/Arduboy2</a></p>
-<p>The <b><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></b> library is a fork of the <a href="https://github.com/Arduboy/Arduboy">Arduboy library</a>, which provides a standard <em>application programming interface</em> (API) to the display, buttons and other hardware of the Arduino based <a href="https://www.arduboy.com/">Arduboy miniature game system</a>.</p>
+<p>The <b><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></b> library is a fork of the <a href="https://github.com/Arduboy/Arduboy">Arduboy library</a>, which provides a standard <em>application programming interface</em> (API) to the display, buttons and other hardware of the Arduino based <a href="https://www.arduboy.com/">Arduboy miniature game system</a>. The original <em>Arduboy</em> library is no longer being maintained.</p>
 <p>The name <em><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></em> doesn't indicate that it's for a new "next generation" of the Arduboy hardware. The name was changed so it can coexist in the Arduino IDE with the current <em>Arduboy</em> library, without conflict. This way, existing sketches can continue to use the <em>Arduboy</em> library and class, without changes, while new sketches can be written (or old ones modified) to use and take advantage of the capabilities of the <em><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></em> class and library.</p>
 <p>For notes on the differences between the <em><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></em> library and the original <em>Arduboy</em> library, and for information on migrating a sketch currently using the <em>Arduboy</em> library, see the sections at the end of this document.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
@@ -136,8 +136,11 @@ The boot logo</h2>
 <p>The RGB LED lights red then green then blue while the logo is scrolling. (If your Arduboy is one of those that has the RGB LED installed incorrectly, then it will light blue then off then red). For users who do not wish to have the RGB LED flash during the boot logo sequence, a flag can be set in system EEPROM to have it remain off. The included <em>SetSystemEEPROM</em> example sketch can be used to set this flag.</p>
 <p>A user settable <em>unit name</em> can be saved in system EEPROM memory. If set, this name will be briefly displayed at the bottom of the boot logo screen, after the logo stops scrolling down. This feature is only available if the <em><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></em> class is used, not the <em><a class="el" href="classArduboy2Base.html" title="The main functions provided for writing sketches for the Arduboy, minus text output.">Arduboy2Base</a></em> class. This is because it requires the text display functions, which are only available in the <em><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></em> class. A flag in system EEPROM controls whether or not the <em>unit name</em> is displayed on the boot logo screen, regardless of whether the <em>unit name</em> itself has been set. The included <em>SetSystemEEPROM</em> example sketch can be used to set both the <em>unit name</em> and this flag.</p>
 <p>Once the logo display sequence completes, the sketch continues.</p>
-<p>For developers who wish to quickly begin testing, or impatient users who want to go strait to playing their game, the boot logo sequence can be bypassed by holding the <em>RIGHT</em> button while powering up, and then releasing it. Alternatively, the <em>RIGHT</em> button can be pressed while the logo is scrolling down.</p>
-<p>For users who wish to always disable the displaying of the boot logo sequence on boot up, a flag in system EEPROM is available for this. The included <em>SetSystemEEPROM</em> example sketch can be used to set this flag.</p>
+<p><b>Note:</b></p>
+<ul>
+<li>For developers who wish to quickly begin testing, or impatient users who want to go strait to playing their game, the boot logo sequence can be bypassed by holding the <em>RIGHT</em> button while powering up, and then releasing it. Alternatively, the <em>RIGHT</em> button can be pressed while the logo is scrolling down.</li>
+<li>For users who wish to always disable the displaying of the boot logo sequence on boot up, a flag in system EEPROM is available for this. The included <em>SetSystemEEPROM</em> example sketch can be used to set this flag.</li>
+</ul>
 <h2><a class="anchor" id="autotoc_md5"></a>
 "Flashlight" mode</h2>
 <p>If the <em>UP</em> button is pressed and held when the Arduboy is powered on, it enters <em>flashlight</em> mode. This turns the RGB LED fully on, and all the pixels of the screen are lit, resulting in a bright white light suitable as a small flashlight. (For an incorrect RGB LED, only the screen will light). To exit <em>flashlight</em> mode the Arduboy must be restarted.</p>
@@ -159,7 +162,7 @@ Using the library in a sketch</h1>
 <p>To initialize the library, you must call its <em>begin()</em> function. This is usually done at the start of the sketch's <em>setup()</em> function:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> setup()</div>
 <div class="line">{</div>
-<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317">begin</a>();</div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2.html#a9f4d4313ee2998572a2105d6594baaa1">begin</a>();</div>
 <div class="line">  <span class="comment">// more setup code follows, if required</span></div>
 <div class="line">}</div>
 </div><!-- fragment --><p>The rest of the <a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a> functions will now be available for use.</p>
@@ -203,51 +206,87 @@ Remove the text functions</h3>
 </div><!-- fragment --><p>with</p>
 <div class="fragment"><div class="line"><a class="code" href="classArduboy2Base.html">Arduboy2Base</a> arduboy;</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md14"></a>
-Remove boot up features</h3>
-<p>As previously described, the <em>begin()</em> function includes features that are intended to be available to all sketches during boot up. However, if you're looking to gain some code space, you can call <em>boot()</em> instead of <em>begin()</em>. This will initialize the system but not include any of the extra boot up features. If desired, you can then add back in any of these features by calling the functions that perform them. You will have to trade off between the desirability of having a feature and how much memory you can recover by not including it.</p>
-<p>A good way to use <em>boot()</em> instead of <em>begin()</em> is to copy the code from the body of the <em>begin()</em> function, in file <em><a class="el" href="Arduboy2_8cpp.html" title="The Arduboy2Base and Arduboy2 classes and support objects and definitions.">Arduboy2.cpp</a></em>, into your sketch and then edit it to retain the <em>boot()</em> call and any feature calls desired.</p>
-<p>As of this writing, the begin function is:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317">Arduboy2Base::begin</a>()</div>
+Substitute or remove boot up features</h3>
+<p>As previously described in the <em>Start up features</em> section, the <em>begin()</em> function includes features that are intended to be available to all sketches during boot up. However, if you're looking to gain some code space, you can call <em>boot()</em> instead of <em>begin()</em>. This will initialize the system but not include any of the extra boot up features. You can then add back in any of these features by calling the functions that perform them. You will have to trade off between the desirability of having a feature and how much memory you can recover by not including it.</p>
+<p>You should at least call either <em>flashlight()</em> or <em>safeMode()</em> as a safeguard to allow uploading a new sketch when the bootloader "magic key" problem is an issue.</p>
+<p>Here is a template that provides the equivalent of <em>begin()</em></p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> setup()</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1">boot</a>(); <span class="comment">// raw hardware</span></div>
+<div class="line">  <span class="comment">// Required to initialize the hardware.</span></div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1">boot</a>();</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classArduboy2Base.html#aff2f9bc358bf3090cf4ffa3bd3a59fd6">display</a>(); <span class="comment">// blank the display (sBuffer is global, so cleared automatically)</span></div>
+<div class="line">  <span class="comment">// This clears the display. (The screen buffer will be all zeros)</span></div>
+<div class="line">  <span class="comment">// It may not be needed if something clears the display later on but</span></div>
+<div class="line">  <span class="comment">// &quot;garbage&quot; will be displayed if systemButtons() is used without it.</span></div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#aff2f9bc358bf3090cf4ffa3bd3a59fd6">display</a>();</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a">flashlight</a>(); <span class="comment">// light the RGB LED and screen if UP button is being held.</span></div>
+<div class="line">  <span class="comment">// flashlight() or safeMode() should always be included to provide</span></div>
+<div class="line">  <span class="comment">// a method of recovering from the bootloader &quot;magic key&quot; problem.</span></div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a">flashlight</a>();</div>
+<div class="line"><span class="comment">//  arduboy.safeMode();</span></div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">// check for and handle buttons held during start up for system control</span></div>
-<div class="line">  <a class="code" href="classArduboy2Base.html#ad6dc5d0b396938daee143010bba64182">systemButtons</a>();</div>
+<div class="line">  <span class="comment">// This allows sound to be turned on or muted. If the sketch provides</span></div>
+<div class="line">  <span class="comment">// its own way of toggling sound, or doesn&#39;t produce any sound, this</span></div>
+<div class="line">  <span class="comment">// function may not be required.</span></div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#ad6dc5d0b396938daee143010bba64182">systemButtons</a>();</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classArduboy2Base.html#a4b51510fd8ea2a35e0e4098af209ca88">audio</a>.<a class="code" href="classArduboy2Audio.html#a2d52f5b2b4f6a8132ce9ac7c8ac9a3dd">begin</a>();</div>
-<div class="line"> </div>
-<div class="line">  <a class="code" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe">bootLogo</a>();</div>
-<div class="line"> </div>
-<div class="line">  <a class="code" href="classArduboy2Base.html#a5d2b7ad7086e9ae1d62dea282d44c095">waitNoButtons</a>(); <span class="comment">// wait for all buttons to be released</span></div>
-<div class="line">}</div>
-</div><!-- fragment --><p>To incorporate it into your sketch just keep <em>boot()</em> and whatever feature calls are desired, if any. Comment out or delete the rest. Remember to add the class object name in front of each function call, since they're now being called from outside the class itself. If your sketch uses sound, it's a good idea to keep the call to <em>audio.begin()</em>.</p>
-<p>For example: Let's say a sketch has its own code to enable, disable and save the <em>audio on/off</em> setting, and wants to keep the <em>flashlight</em> function. In <em>setup()</em> it could replace <em>begin()</em> with:</p>
-<div class="fragment"><div class="line">  arduboy.<a class="code" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1">boot</a>(); <span class="comment">// raw hardware</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// *** This particular sketch clears the display soon, so it doesn&#39;t need this:</span></div>
-<div class="line"><span class="comment">//  display(); // blank the display (sBuffer is global, so cleared automatically)</span></div>
-<div class="line"> </div>
-<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a">flashlight</a>(); <span class="comment">// light the RGB LED and screen if UP button is being held.</span></div>
-<div class="line"> </div>
-<div class="line">  <span class="comment">// check for and handle buttons held during start up for system control</span></div>
-<div class="line"><span class="comment">//  systemButtons();</span></div>
-<div class="line"> </div>
+<div class="line">  <span class="comment">// This is required to initialize the speaker. It&#39;s not needed if</span></div>
+<div class="line">  <span class="comment">// the sketch doesn&#39;t produce any sounds.</span></div>
 <div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a4b51510fd8ea2a35e0e4098af209ca88">audio</a>.<a class="code" href="classArduboy2Audio.html#a2d52f5b2b4f6a8132ce9ac7c8ac9a3dd">begin</a>();</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">//  bootLogo();</span></div>
+<div class="line">  <span class="comment">// This displays the boot logo sequence but note that the logo can</span></div>
+<div class="line">  <span class="comment">// be suppressed by the user, by pressing the RIGHT button or using</span></div>
+<div class="line">  <span class="comment">// a system EEPROM setting. If not removed entirely, an alternative</span></div>
+<div class="line">  <span class="comment">// bootLogo...() function may save some memory.</span></div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe">bootLogo</a>();</div>
+<div class="line"><span class="comment">//  arduboy.bootLogoCompressed();</span></div>
+<div class="line"><span class="comment">//  arduboy.bootLogoSpritesSelfMasked();</span></div>
+<div class="line"><span class="comment">//  arduboy.bootLogoSpritesOverwrite();</span></div>
+<div class="line"><span class="comment">//  arduboy.bootLogoSpritesBSelfMasked();</span></div>
+<div class="line"><span class="comment">//  arduboy.bootLogoSpritesBOverwrite();</span></div>
+<div class="line"><span class="comment">//  arduboy.bootLogoText();</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">//  waitNoButtons(); // wait for all buttons to be released</span></div>
-</div><!-- fragment --><p>This saves whatever code <em>display()</em>, <em>systemButtons()</em>, <em>bootLogo()</em> and <em>waitNoButtons()</em> would use.</p>
-<p>There are a few functions provided that are roughly equivalent to the standard functions used by <em>begin()</em> but which use less code space.</p>
+<div class="line">  <span class="comment">// Wait for all buttons to be released, in case a pressed one might</span></div>
+<div class="line">  <span class="comment">// cause problems by being acted upon when the actual sketch code</span></div>
+<div class="line">  <span class="comment">// starts. If neither systemButtons() nor bootLogo() is kept, this</span></div>
+<div class="line">  <span class="comment">// function isn&#39;t required.</span></div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a5d2b7ad7086e9ae1d62dea282d44c095">waitNoButtons</a>();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Additional setup code...</span></div>
+<div class="line"> </div>
+<div class="line">}</div>
+</div><!-- fragment --><p>There are a few functions provided that are roughly equivalent to the standard functions used by <em>begin()</em> but which use less code space.</p>
 <ul>
-<li><em>bootLogoCompressed()</em>, <em>bootLogoSpritesSelfMasked()</em>, <em>bootLogoSpritesOverwrite()</em>, <em>bootLogoSpritesBSelfMasked()</em> and <em>bootLogoSpritesBOverwrite()</em> will do the same as <em>bootLogo()</em> but will use <em>drawCompressed()</em>, or <em><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps.">Sprites</a></em> / <em><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size.">SpritesB</a></em> class <em>drawSelfMasked()</em> or <em>drawOverwrite()</em> functions respectively, instead of <em>drawBitmask()</em>, to render the logo. If the sketch uses one of these functions, then using the boot logo function that also uses it may reduce code size. It's best to try each of them to see which one produces the smallest size.</li>
+<li><em>bootLogoCompressed()</em>, <em>bootLogoSpritesSelfMasked()</em>, <em>bootLogoSpritesOverwrite()</em>, <em>bootLogoSpritesBSelfMasked()</em> and <em>bootLogoSpritesBOverwrite()</em> will do the same as <em>bootLogo()</em> but will use <em>drawCompressed()</em>, or <em><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps.">Sprites</a></em> / <em><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size.">SpritesB</a></em> class <em>drawSelfMasked()</em> or <em>drawOverwrite()</em> functions respectively, instead of <em>drawBitmap()</em>, to render the logo. If the sketch uses one of these functions, then using the boot logo function that also uses it may reduce code size. It's best to try each of them to see which one produces the smallest size.</li>
 <li><em>bootLogoText()</em> can be used in place <em>bootLogo()</em> in the case where the sketch uses text functions. It renders the logo as text instead of as a bitmap (so doesn't look as good).</li>
-<li><em>safeMode()</em> can be used in place of <em>flashlight()</em> for cases where it's needed to allow uploading a new sketch when the bootloader "magic key" problem is an issue. It only lights the red RGB LED, so you don't get the bright light that is the primary purpose of <em>flashlight()</em>.</li>
+<li><em>safeMode()</em> can be used in place of <em>flashlight()</em> as a safeguard to allow uploading a new sketch when the bootloader "magic key" problem is an issue. It only lights the red RGB LED, so you don't get the bright light that is the primary purpose of <em>flashlight()</em>.</li>
 </ul>
+<p>It is also possible to replace the boot logo drawing function with one that uses a different bitmap rendering function used elsewhere in your sketch. This may save memory by using this bitmap function for the logo, instead of the logo using a separate function that only ends up being used once. For example, if you use the <em>ArdBitmap</em> library's <em>drawCompressed()</em> function in your sketch, you could convert the <b>ARDUBOY</b> logo to <em>Ardbitmap</em> compressed format, and create <em>drawLogoArdCompressed()</em> and <em>bootLogoArdCompressed()</em> functions:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> drawLogoArdCompressed(int16_t y)</div>
+<div class="line">{</div>
+<div class="line">  ardbitmap.drawCompressed(20, y, arduboy_logo_ardbitmap,</div>
+<div class="line">                           <a class="code" href="Arduboy2_8h.html#a87b537f5fa5c109d3c05c13d6b18f382">WHITE</a>, ALIGN_CENTER, MIRROR_NONE);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> bootLogoArdCompressed()</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordflow">if</span> (arduboy.<a class="code" href="classArduboy2Base.html#a9b904babc43d7c1a309f18c68edf5630">bootLogoShell</a>(drawLogoArdCompressed))</div>
+<div class="line">  {</div>
+<div class="line">    arduboy.bootLogoExtra();</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> setup()</div>
+<div class="line">{</div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a0fcd2999f4a611c7bdeab5d6ae84b658">beginDoFirst</a>();</div>
+<div class="line">  bootLogoArdCompressed();</div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a5d2b7ad7086e9ae1d62dea282d44c095">waitNoButtons</a>();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Additional setup code...</span></div>
+<div class="line"> </div>
+<div class="line">}</div>
+</div><!-- fragment --><p>The <b>ARDUBOY</b> logo, in PNG format, is included in the library repository as file:</p>
+<p><code>extras/assets/arduboy_logo.png</code></p>
 <h3><a class="anchor" id="autotoc_md15"></a>
 Use the SpritesB class instead of Sprites</h3>
 <p>The <em><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size.">SpritesB</a></em> class has functions identical to the <em><a class="el" href="classSprites.html" title="A class for drawing animated sprites from image and mask bitmaps.">Sprites</a></em> class. The difference is that <em><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size.">SpritesB</a></em> is optimized for small code size rather than execution speed. If you want to use the sprites functions, and the slower speed of <em><a class="el" href="classSpritesB.html" title="A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size.">SpritesB</a></em> doesn't affect your sketch, you may be able to use it to gain some code space.</p>
@@ -262,6 +301,7 @@ Eliminate the USB stack code</h3>
 <hr  />
 <h1><a class="anchor" id="autotoc_md18"></a>
 What's different from Arduboy library V1.1</h1>
+<p>(These notes apply to when the <em><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></em> library was first released. There will have been many additional changes, enhancements and features added to <em><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></em> since then.)</p>
 <p>A main goal of <a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a> is to provide ways in which more code space can be freed for use by large sketches. Another goal is to allow methods other than the <em>tunes</em> functions to be used to produce sounds. <a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a> remains substantially compatible with <a href="https://github.com/Arduboy/Arduboy/releases/tag/v1.1">Arduboy library V1.1</a>, which was the latest stable release at the time of the fork. <a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a> is based on the code targeted for Arduboy library V1.2, which was still in development and unreleased at the time it was forked.</p>
 <p>Main differences between <a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a> and Arduboy V1.1 are:</p>
 <ul>
@@ -364,38 +404,40 @@ Sketch uses tunes.playScore()</h2>
 <p>The benefit of using <em>ArduboyTones</em> would be reduced code size and possibly easier addition of new sequences without the need of a MIDI to Playtune format converter.</p>
 <h2><a class="anchor" id="autotoc_md26"></a>
 Sketch uses the beginNoLogo() function instead of begin()</h2>
-<p>The <em>beginNoLogo()</em> function has been removed. Instead, <em>boot()</em> can be used with additional functions following it to add back in desired boot functionality. See the information above, under the heading <em>Remove boot up features</em>, for more details. Assuming the object is named <em>arduboy</em>, a direct replacement for <em>beginNoLogo()</em> would be:</p>
-<div class="fragment"><div class="line">arduboy.<a class="code" href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1">boot</a>();</div>
-<div class="line">arduboy.<a class="code" href="classArduboy2Base.html#aff2f9bc358bf3090cf4ffa3bd3a59fd6">display</a>();</div>
-<div class="line">arduboy.<a class="code" href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a">flashlight</a>();</div>
-<div class="line">arduboy.<a class="code" href="classArduboy2Base.html#a4b51510fd8ea2a35e0e4098af209ca88">audio</a>.<a class="code" href="classArduboy2Audio.html#a2d52f5b2b4f6a8132ce9ac7c8ac9a3dd">begin</a>();</div>
+<p>The <em>beginNoLogo()</em> function has been removed. <em>beginNoLogo()</em> can be replaced with <em>begin()</em>, since users can choose to suppress the logo sequence using the <em>RIGHT</em> button or by setting a flag in system EEPROM.</p>
+<p>If using <em>begin()</em> results in the sketch program memory size being too large, <em>beginDoFirst()</em> or <em>boot()</em> can be used with additional functions following it to add back in desired boot functionality. See the information above, under the heading <em>Substitute or remove boot up features</em>, for more details. Assuming the object is named <em>arduboy</em>, an equivalent replacement for <em>beginNoLogo()</em> would be:</p>
+<div class="fragment"><div class="line">arduboy.<a class="code" href="classArduboy2Base.html#a0fcd2999f4a611c7bdeab5d6ae84b658">beginDoFirst</a>();</div>
+<div class="line">arduboy.<a class="code" href="classArduboy2Base.html#a5d2b7ad7086e9ae1d62dea282d44c095">waitNoButtons</a>();</div>
 </div><!-- fragment --><hr  />
  </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aArduboy2Core_8h_html_a183cd0e06e8d993ee23b588a9d05ec69"><div class="ttname"><a href="Arduboy2Core_8h.html#a183cd0e06e8d993ee23b588a9d05ec69">PIN_SPEAKER_1</a></div><div class="ttdeci">#define PIN_SPEAKER_1</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Core_8h_source.html#l00111">Arduboy2Core.h:110</a></div></div>
-<div class="ttc" id="aclassArduboy2Core_html_a06ae236911e49634dbd7bfa1a26a4ba1"><div class="ttname"><a href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1">Arduboy2Core::boot</a></div><div class="ttdeci">static void boot()</div><div class="ttdoc">Initialize the Arduboy's hardware.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Core_8cpp_source.html#l00083">Arduboy2Core.cpp:83</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_aff2f9bc358bf3090cf4ffa3bd3a59fd6"><div class="ttname"><a href="classArduboy2Base.html#aff2f9bc358bf3090cf4ffa3bd3a59fd6">Arduboy2Base::display</a></div><div class="ttdeci">void display()</div><div class="ttdoc">Copy the contents of the display buffer to the display.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00993">Arduboy2.cpp:993</a></div></div>
+<div class="ttc" id="aclassArduboy2Core_html_a06ae236911e49634dbd7bfa1a26a4ba1"><div class="ttname"><a href="classArduboy2Core.html#a06ae236911e49634dbd7bfa1a26a4ba1">Arduboy2Core::boot</a></div><div class="ttdeci">static void boot()</div><div class="ttdoc">Initialize the Arduboy's hardware.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Core_8cpp_source.html#l00081">Arduboy2Core.cpp:81</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_aff2f9bc358bf3090cf4ffa3bd3a59fd6"><div class="ttname"><a href="classArduboy2Base.html#aff2f9bc358bf3090cf4ffa3bd3a59fd6">Arduboy2Base::display</a></div><div class="ttdeci">static void display()</div><div class="ttdoc">Copy the contents of the display buffer to the display.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00997">Arduboy2.cpp:997</a></div></div>
 <div class="ttc" id="aclassArduboy2Audio_html_ab0c55b17d1d49cccb1bb797a6d2a81db"><div class="ttname"><a href="classArduboy2Audio.html#ab0c55b17d1d49cccb1bb797a6d2a81db">Arduboy2Audio::off</a></div><div class="ttdeci">static void off()</div><div class="ttdoc">Turn sound off (mute).</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Audio_8cpp_source.html#l00023">Arduboy2Audio.cpp:23</a></div></div>
-<div class="ttc" id="aclassArduboy2_html"><div class="ttname"><a href="classArduboy2.html">Arduboy2</a></div><div class="ttdoc">The main functions provided for writing sketches for the Arduboy, including text output.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l01450">Arduboy2.h:1451</a></div></div>
+<div class="ttc" id="aclassArduboy2_html"><div class="ttname"><a href="classArduboy2.html">Arduboy2</a></div><div class="ttdoc">The main functions provided for writing sketches for the Arduboy, including text output.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l01575">Arduboy2.h:1576</a></div></div>
+<div class="ttc" id="aArduboy2_8h_html_a87b537f5fa5c109d3c05c13d6b18f382"><div class="ttname"><a href="Arduboy2_8h.html#a87b537f5fa5c109d3c05c13d6b18f382">WHITE</a></div><div class="ttdeci">#define WHITE</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l00080">Arduboy2.h:79</a></div></div>
 <div class="ttc" id="aclassArduboy2Audio_html_af7a4991bb0ca67cfeac3d3af7b119841"><div class="ttname"><a href="classArduboy2Audio.html#af7a4991bb0ca67cfeac3d3af7b119841">Arduboy2Audio::on</a></div><div class="ttdeci">static void on()</div><div class="ttdoc">Turn sound on.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Audio_8cpp_source.html#l00011">Arduboy2Audio.cpp:11</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_a4b51510fd8ea2a35e0e4098af209ca88"><div class="ttname"><a href="classArduboy2Base.html#a4b51510fd8ea2a35e0e4098af209ca88">Arduboy2Base::audio</a></div><div class="ttdeci">Arduboy2Audio audio</div><div class="ttdoc">An object created to provide audio control functions within this class.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l00232">Arduboy2.h:232</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_a4b51510fd8ea2a35e0e4098af209ca88"><div class="ttname"><a href="classArduboy2Base.html#a4b51510fd8ea2a35e0e4098af209ca88">Arduboy2Base::audio</a></div><div class="ttdeci">static Arduboy2Audio audio</div><div class="ttdoc">An object created to provide audio control functions within this class.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l00227">Arduboy2.h:227</a></div></div>
+<div class="ttc" id="aclassArduboy2_html_a9f4d4313ee2998572a2105d6594baaa1"><div class="ttname"><a href="classArduboy2.html#a9f4d4313ee2998572a2105d6594baaa1">Arduboy2::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the hardware, display the boot logo, provide boot utilities, etc.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l01170">Arduboy2.cpp:1170</a></div></div>
 <div class="ttc" id="aArduboy2Core_8h_html_a9b9703997ab3476f68dc3a779128f543"><div class="ttname"><a href="Arduboy2Core_8h.html#a9b9703997ab3476f68dc3a779128f543">PIN_SPEAKER_2</a></div><div class="ttdeci">#define PIN_SPEAKER_2</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Core_8h_source.html#l00112">Arduboy2Core.h:111</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html"><div class="ttname"><a href="classArduboy2Base.html">Arduboy2Base</a></div><div class="ttdoc">The main functions provided for writing sketches for the Arduboy, minus text output.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l00215">Arduboy2.h:216</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_a8a917f8ad5bc1a81c85e12ce2ad4a317"><div class="ttname"><a href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317">Arduboy2Base::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the hardware, display the boot logo, provide boot utilities, etc.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00028">Arduboy2.cpp:28</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_a90e352941396d013789dac951d1230fe"><div class="ttname"><a href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe">Arduboy2Base::bootLogo</a></div><div class="ttdeci">void bootLogo()</div><div class="ttdoc">Display the boot logo sequence using drawBitmap().</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00100">Arduboy2.cpp:100</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_af8f9d1ef6c6b2b755a742653f972325a"><div class="ttname"><a href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a">Arduboy2Base::flashlight</a></div><div class="ttdeci">void flashlight()</div><div class="ttdoc">Turn the RGB LED and display fully on to act as a small flashlight/torch.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00053">Arduboy2.cpp:53</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html"><div class="ttname"><a href="classArduboy2Base.html">Arduboy2Base</a></div><div class="ttdoc">The main functions provided for writing sketches for the Arduboy, minus text output.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l00211">Arduboy2.h:212</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_a90e352941396d013789dac951d1230fe"><div class="ttname"><a href="classArduboy2Base.html#a90e352941396d013789dac951d1230fe">Arduboy2Base::bootLogo</a></div><div class="ttdeci">static void bootLogo()</div><div class="ttdoc">Display the boot logo sequence using drawBitmap().</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00109">Arduboy2.cpp:109</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_af8f9d1ef6c6b2b755a742653f972325a"><div class="ttname"><a href="classArduboy2Base.html#af8f9d1ef6c6b2b755a742653f972325a">Arduboy2Base::flashlight</a></div><div class="ttdeci">static void flashlight()</div><div class="ttdoc">Turn the RGB LED and display fully on to act as a small flashlight/torch.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00062">Arduboy2.cpp:62</a></div></div>
 <div class="ttc" id="aArduboy2_8h_html"><div class="ttname"><a href="Arduboy2_8h.html">Arduboy2.h</a></div><div class="ttdoc">The Arduboy2Base and Arduboy2 classes and support objects and definitions.</div></div>
 <div class="ttc" id="aclassArduboy2Audio_html_a2d52f5b2b4f6a8132ce9ac7c8ac9a3dd"><div class="ttname"><a href="classArduboy2Audio.html#a2d52f5b2b4f6a8132ce9ac7c8ac9a3dd">Arduboy2Audio::begin</a></div><div class="ttdeci">static void begin()</div><div class="ttdoc">Initialize the speaker based on the current mute setting.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Audio_8cpp_source.html#l00048">Arduboy2Audio.cpp:48</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_a5d2b7ad7086e9ae1d62dea282d44c095"><div class="ttname"><a href="classArduboy2Base.html#a5d2b7ad7086e9ae1d62dea282d44c095">Arduboy2Base::waitNoButtons</a></div><div class="ttdeci">void waitNoButtons()</div><div class="ttdoc">Wait until all buttons have been released.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00207">Arduboy2.cpp:207</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_ad6dc5d0b396938daee143010bba64182"><div class="ttname"><a href="classArduboy2Base.html#ad6dc5d0b396938daee143010bba64182">Arduboy2Base::systemButtons</a></div><div class="ttdeci">void systemButtons()</div><div class="ttdoc">Handle buttons held on startup for system control.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00074">Arduboy2.cpp:74</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_a5d2b7ad7086e9ae1d62dea282d44c095"><div class="ttname"><a href="classArduboy2Base.html#a5d2b7ad7086e9ae1d62dea282d44c095">Arduboy2Base::waitNoButtons</a></div><div class="ttdeci">static void waitNoButtons()</div><div class="ttdoc">Wait until all buttons have been released.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00213">Arduboy2.cpp:213</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_ad6dc5d0b396938daee143010bba64182"><div class="ttname"><a href="classArduboy2Base.html#ad6dc5d0b396938daee143010bba64182">Arduboy2Base::systemButtons</a></div><div class="ttdeci">static void systemButtons()</div><div class="ttdoc">Handle buttons held on startup for system control.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00083">Arduboy2.cpp:83</a></div></div>
 <div class="ttc" id="aclassSprites_html"><div class="ttname"><a href="classSprites.html">Sprites</a></div><div class="ttdoc">A class for drawing animated sprites from image and mask bitmaps.</div><div class="ttdef"><b>Definition:</b> <a href="Sprites_8h_source.html#l00075">Sprites.h:76</a></div></div>
 <div class="ttc" id="aclassSpritesB_html"><div class="ttname"><a href="classSpritesB.html">SpritesB</a></div><div class="ttdoc">A class for drawing animated sprites from image and mask bitmaps. Optimized for small code size.</div><div class="ttdef"><b>Definition:</b> <a href="SpritesB_8h_source.html#l00040">SpritesB.h:41</a></div></div>
 <div class="ttc" id="aclassArduboy2Audio_html_ad565d3174fa31d5ff75bf63ee610596f"><div class="ttname"><a href="classArduboy2Audio.html#ad565d3174fa31d5ff75bf63ee610596f">Arduboy2Audio::enabled</a></div><div class="ttdeci">static bool enabled()</div><div class="ttdoc">Get the current sound state.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Audio_8cpp_source.html#l00056">Arduboy2Audio.cpp:56</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_a0fcd2999f4a611c7bdeab5d6ae84b658"><div class="ttname"><a href="classArduboy2Base.html#a0fcd2999f4a611c7bdeab5d6ae84b658">Arduboy2Base::beginDoFirst</a></div><div class="ttdeci">static void beginDoFirst()</div><div class="ttdoc">Helper function that calls the inital functions used by begin()</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00048">Arduboy2.cpp:48</a></div></div>
+<div class="ttc" id="aclassArduboy2Base_html_a9b904babc43d7c1a309f18c68edf5630"><div class="ttname"><a href="classArduboy2Base.html#a9b904babc43d7c1a309f18c68edf5630">Arduboy2Base::bootLogoShell</a></div><div class="ttdeci">static bool bootLogoShell(void(&amp;drawLogo)(int16_t))</div><div class="ttdoc">Display the boot logo sequence using the provided function.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00171">Arduboy2.cpp:171</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jul 24 2020 16:17:17 for Arduboy2 Library by
+    <li class="footer">Generated on Tue Sep 29 2020 14:29:54 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

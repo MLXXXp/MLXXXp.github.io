@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width_318',['width',['../structRect.html#a435b7b0c415e6fff3e4073c1e780cb59',1,'Rect']]]
+  ['previousbuttonstate_334',['previousButtonState',['../classArduboy2Base.html#af52a107ad8fa63b3476c71c2c07af6b7',1,'Arduboy2Base']]]
 ];

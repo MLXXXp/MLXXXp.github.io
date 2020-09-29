@@ -3,11 +3,12 @@ var classArduboy2Base =
     [ "allPixelsOn", "classArduboy2Base.html#a54f6301ddf9197e6f4fca095faf845a2", null ],
     [ "anyPressed", "classArduboy2Base.html#af2e55b1f40cfbe339dbe71c0d34640e5", null ],
     [ "begin", "classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317", null ],
+    [ "beginDoFirst", "classArduboy2Base.html#a0fcd2999f4a611c7bdeab5d6ae84b658", null ],
     [ "blank", "classArduboy2Base.html#a559b5db701e6b0be92bae6b69f4b74e1", null ],
     [ "boot", "classArduboy2Base.html#a06ae236911e49634dbd7bfa1a26a4ba1", null ],
     [ "bootLogo", "classArduboy2Base.html#a90e352941396d013789dac951d1230fe", null ],
     [ "bootLogoCompressed", "classArduboy2Base.html#ae802eed75c520614c5a9f46248e90369", null ],
-    [ "bootLogoShell", "classArduboy2Base.html#a39350bebcbaf87b62ea1d0e78b390e33", null ],
+    [ "bootLogoShell", "classArduboy2Base.html#a9b904babc43d7c1a309f18c68edf5630", null ],
     [ "bootLogoSpritesBOverwrite", "classArduboy2Base.html#a0af79eeea22876d43c3ad69d77a3f868", null ],
     [ "bootLogoSpritesBSelfMasked", "classArduboy2Base.html#adb26ffca609f81b800a48d6f196023e5", null ],
     [ "bootLogoSpritesOverwrite", "classArduboy2Base.html#a6e57d796d1697aad7773e1c005765dcf", null ],
@@ -90,6 +91,8 @@ var classArduboy2Base =
     [ "arduboy_logo_compressed", "classArduboy2Base.html#a591034bd6a5d8a6d10b9a6f304fe3d1c", null ],
     [ "arduboy_logo_sprite", "classArduboy2Base.html#a7ef2a87fa30307ee2d344efd2bef9c55", null ],
     [ "audio", "classArduboy2Base.html#a4b51510fd8ea2a35e0e4098af209ca88", null ],
+    [ "currentButtonState", "classArduboy2Base.html#a734861fe135ffe631d6412241894f5c2", null ],
     [ "frameCount", "classArduboy2Base.html#a281ecc7c3df686e3e87584794442cda9", null ],
+    [ "previousButtonState", "classArduboy2Base.html#af52a107ad8fa63b3476c71c2c07af6b7", null ],
     [ "sBuffer", "classArduboy2Base.html#a001a0e77a58306f871fe47135fabb872", null ]
 ];

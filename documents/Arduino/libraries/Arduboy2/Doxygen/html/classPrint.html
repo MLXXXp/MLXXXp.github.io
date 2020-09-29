@@ -31,7 +31,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Arduboy2 Library
-   &#160;<span id="projectnumber">5.3.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -131,31 +131,39 @@ $(document).ready(function(){initNavTree('classPrint.html',''); initResizable();
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Arduino <code><a class="el" href="classPrint.html" title="The Arduino Print class is available for writing text to the screen buffer.">Print</a></code> class is available for writing text to the screen buffer. </p>
 <p>For an <code><a class="el" href="classArduboy2.html" title="The main functions provided for writing sketches for the Arduboy, including text output.">Arduboy2</a></code> class object, functions provided by the Arduino <code><a class="el" href="classPrint.html" title="The Arduino Print class is available for writing text to the screen buffer.">Print</a></code> class can be used to write text to the screen buffer, in the same manner as the Arduino <code>Serial.print()</code>, etc., functions.</p>
-<p><a class="el" href="classPrint.html" title="The Arduino Print class is available for writing text to the screen buffer.">Print</a> will use the <code>write()</code> function to actually draw each character in the screen buffer, using the library's <code>font5x7</code> font. Two character values are handled specially (and thus the font symbols that they represent can't be displayed):</p>
+<p><a class="el" href="classPrint.html" title="The Arduino Print class is available for writing text to the screen buffer.">Print</a> will use the <code>write()</code> function to actually draw each character in the screen buffer, using the library's <code>font5x7</code> font. Two character values are handled specially:</p>
 <ul>
-<li>ASCII newline or line feed (<code>\n</code>, 0x0A, inverse white circle). This will move the text cursor position to the start of the next line, based on the current text size.</li>
+<li>ASCII newline/line feed (<code>\n</code>, 0x0A, inverse white circle). This will move the text cursor position to the start of the next line, based on the current text size.</li>
 <li>ASCII carriage return (<code>\r</code>, 0x0D, musical eighth note). This character will be ignored.</li>
 </ul>
+<p>To override the special handling of the above values, to allow the characters they represent to be printed, text <em>raw</em> mode can be selected using the <code>setTextRawMode()</code> function.</p>
 <p>See: <a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/print/">https://www.arduino.cc/reference/en/language/functions/communication/serial/print/</a></p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> value = 42;</div>
 <div class="line"> </div>
-<div class="line">arduboy.println(<span class="stringliteral">&quot;Hello World&quot;</span>); <span class="comment">// Prints &quot;Hello World&quot; and then moves the</span></div>
+<div class="line">arduboy.println(<span class="stringliteral">&quot;Hello World&quot;</span>); <span class="comment">// Prints &quot;Hello World&quot; and then sets the</span></div>
 <div class="line">                                <span class="comment">// text cursor to the start of the next line</span></div>
-<div class="line">arduboy.print(value);       <span class="comment">// Prints &quot;42&quot;</span></div>
-<div class="line">arduboy.print(<span class="charliteral">&#39;\n&#39;</span>);        <span class="comment">// Moves the text cursor to the start of the next line</span></div>
-<div class="line">arduboy.print(78, HEX);     <span class="comment">// Prints &quot;4E&quot; (78 in hexadecimal)</span></div>
-<div class="line">arduboy.print(<span class="stringliteral">&quot;\x03\xEA&quot;</span>);  <span class="comment">// Prints a heart symbol and a Greek uppercase omega</span></div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2.html#adc1b073783b71ae14843a4a0e806289a" title="Write a single character at the current text cursor position.">Arduboy2::write()</a> <a class="el" href="classArduboy2.html#adfdb8384a78992e93c268f3516b9565a" title="The font used for text functions.">Arduboy2::font5x7</a> </dd></dl>
+<div class="line">arduboy.print(value);      <span class="comment">// Prints &quot;42&quot;</span></div>
+<div class="line">arduboy.print(<span class="charliteral">&#39;\n&#39;</span>);       <span class="comment">// Sets the text cursor to the start of the next line</span></div>
+<div class="line">arduboy.print(78, HEX);    <span class="comment">// Prints &quot;4E&quot; (78 in hexadecimal)</span></div>
+<div class="line">arduboy.print(<span class="stringliteral">&quot;\x03\xEA&quot;</span>); <span class="comment">// Prints a heart symbol and a Greek uppercase omega</span></div>
+<div class="line"> </div>
+<div class="line">arduboy.<a class="code" href="classArduboy2.html#ab7f19466c6e5232bad4f91ab95b93e43">setTextRawMode</a>(<span class="keyword">true</span>);  <span class="comment">// Set text &quot;raw&quot; mode</span></div>
+<div class="line">arduboy.print(<span class="stringliteral">&quot;\r\n&quot;</span>)          <span class="comment">// Prints a &quot;musical eighth note&quot;</span></div>
+<div class="line">                               <span class="comment">// followed by an &quot;inverse white circle&quot;</span></div>
+<div class="line">                               <span class="comment">// because we&#39;re in &quot;raw&quot; mode</span></div>
+<div class="line">arduboy.<a class="code" href="classArduboy2.html#ab7f19466c6e5232bad4f91ab95b93e43">setTextRawMode</a>(<span class="keyword">false</span>); <span class="comment">// Exit text &quot;raw&quot; mode</span></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classArduboy2.html#a810d65a88097a98ddf25ed1cfee271e0" title="Set the text character size.">Arduboy2::setTextSize()</a> <a class="el" href="classArduboy2.html#a7a57fc5d34bb080ac03052c03fc1790d" title="Set the text foreground color.">Arduboy2::setTextColor()</a> <a class="el" href="classArduboy2.html#aceb292fd4c3dd298e523421bb0f51236" title="Set the text background color.">Arduboy2::setTextBackground()</a> <a class="el" href="classArduboy2.html#a860b6c048eadac45ae8e4901ad254b6b" title="Set or disable text wrap mode.">Arduboy2::setTextWrap()</a> <a class="el" href="classArduboy2.html#ab7f19466c6e5232bad4f91ab95b93e43" title="Set or disable text raw mode, allowing special characters to be displayed.">Arduboy2::setTextRawMode()</a> <a class="el" href="classArduboy2.html#adc1b073783b71ae14843a4a0e806289a" title="Write a single character at the current text cursor position.">Arduboy2::write()</a> <a class="el" href="classArduboy2.html#adfdb8384a78992e93c268f3516b9565a" title="The font used for text functions.">Arduboy2::font5x7</a> </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="Arduboy2_8h_source.html">Arduboy2.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassArduboy2_html_ab7f19466c6e5232bad4f91ab95b93e43"><div class="ttname"><a href="classArduboy2.html#ab7f19466c6e5232bad4f91ab95b93e43">Arduboy2::setTextRawMode</a></div><div class="ttdeci">static void setTextRawMode(bool raw)</div><div class="ttdoc">Set or disable text raw mode, allowing special characters to be displayed.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l01484">Arduboy2.cpp:1484</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classPrint.html">Print</a></li>
-    <li class="footer">Generated on Fri Jul 24 2020 16:17:17 for Arduboy2 Library by
+    <li class="footer">Generated on Tue Sep 29 2020 14:29:54 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

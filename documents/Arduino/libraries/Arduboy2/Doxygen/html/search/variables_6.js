@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_319',['x',['../structRect.html#ada5ac95f20f202d5667eedc44890c72a',1,'Rect::x()'],['../structPoint.html#a664d56a48f132205b2fef1fa8881f977',1,'Point::x()']]]
+  ['sbuffer_335',['sBuffer',['../classArduboy2Base.html#a001a0e77a58306f871fe47135fabb872',1,'Arduboy2Base']]]
 ];

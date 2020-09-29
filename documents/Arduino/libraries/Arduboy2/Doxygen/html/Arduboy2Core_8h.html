@@ -31,7 +31,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Arduboy2 Library
-   &#160;<span id="projectnumber">5.3.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
  </tr>
@@ -250,7 +250,7 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="Arduboy2Core_8h.html#ac6bc02549c65b647ecc49fe429c0055b">ARDUBOY_NO_USB</a></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  arduboy.<a class="code" href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317">begin</a>();</div>
+<div class="line">  arduboy.<a class="code" href="classArduboy2.html#a9f4d4313ee2998572a2105d6594baaa1">begin</a>();</div>
 <div class="line">  <span class="comment">// any additional setup code</span></div>
 <div class="line">}</div>
 </div><!-- fragment --><p>As stated in the warning above, without the USB code an uploader program will be unable to automatically force a reset into the bootloader to upload a new sketch. The user will have to manually invoke a reset. In addition to eliminating the USB code, this macro will check if the DOWN button is held when the sketch first starts and, if so, will call <code>exitToBootloader()</code> to start the bootloader for uploading. This makes it easier for the user than having to press the reset button.</p>
@@ -502,15 +502,15 @@ Macros</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassArduboy2_html"><div class="ttname"><a href="classArduboy2.html">Arduboy2</a></div><div class="ttdoc">The main functions provided for writing sketches for the Arduboy, including text output.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l01450">Arduboy2.h:1451</a></div></div>
-<div class="ttc" id="aclassArduboy2Base_html_a8a917f8ad5bc1a81c85e12ce2ad4a317"><div class="ttname"><a href="classArduboy2Base.html#a8a917f8ad5bc1a81c85e12ce2ad4a317">Arduboy2Base::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the hardware, display the boot logo, provide boot utilities, etc.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l00028">Arduboy2.cpp:28</a></div></div>
+<div class="ttc" id="aclassArduboy2_html"><div class="ttname"><a href="classArduboy2.html">Arduboy2</a></div><div class="ttdoc">The main functions provided for writing sketches for the Arduboy, including text output.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8h_source.html#l01575">Arduboy2.h:1576</a></div></div>
+<div class="ttc" id="aclassArduboy2_html_a9f4d4313ee2998572a2105d6594baaa1"><div class="ttname"><a href="classArduboy2.html#a9f4d4313ee2998572a2105d6594baaa1">Arduboy2::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the hardware, display the boot logo, provide boot utilities, etc.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2_8cpp_source.html#l01170">Arduboy2.cpp:1170</a></div></div>
 <div class="ttc" id="aArduboy2_8h_html"><div class="ttname"><a href="Arduboy2_8h.html">Arduboy2.h</a></div><div class="ttdoc">The Arduboy2Base and Arduboy2 classes and support objects and definitions.</div></div>
 <div class="ttc" id="aArduboy2Core_8h_html_ac6bc02549c65b647ecc49fe429c0055b"><div class="ttname"><a href="Arduboy2Core_8h.html#ac6bc02549c65b647ecc49fe429c0055b">ARDUBOY_NO_USB</a></div><div class="ttdeci">#define ARDUBOY_NO_USB</div><div class="ttdoc">Eliminate the USB stack to free up code space.</div><div class="ttdef"><b>Definition:</b> <a href="Arduboy2Core_8h_source.html#l00305">Arduboy2Core.h:304</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="Arduboy2Core_8h.html">Arduboy2Core.h</a></li>
-    <li class="footer">Generated on Fri Jul 24 2020 16:17:17 for Arduboy2 Library by
+    <li class="footer">Generated on Tue Sep 29 2020 14:29:54 for Arduboy2 Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

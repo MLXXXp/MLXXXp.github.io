@@ -39,7 +39,7 @@ var NAVTREE =
       [ "Ways to make more code space available to sketches", "index.html#autotoc_md11", [
         [ "Sound effects and music", "index.html#autotoc_md12", null ],
         [ "Remove the text functions", "index.html#autotoc_md13", null ],
-        [ "Remove boot up features", "index.html#autotoc_md14", null ],
+        [ "Substitute or remove boot up features", "index.html#autotoc_md14", null ],
         [ "Use the SpritesB class instead of Sprites", "index.html#autotoc_md15", null ],
         [ "Eliminate the USB stack code", "index.html#autotoc_md16", null ]
       ] ]
@@ -78,7 +78,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Arduboy2Audio_8cpp.html",
-"classArduboy2Base.html#adc24b0f64d1a1ead904a1bdbaf8a776b"
+"classArduboy2Base.html#ab86319e224e1a902d231ce4a9e10ad22"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
